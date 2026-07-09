@@ -36,6 +36,7 @@ jobs:
         run: |
           mkdir -p _site
           cp index.html _site/index.html
+          cp logo.png _site/logo.png
           touch _site/.nojekyll
           # Custom domain — keeps goodnewsbears.news attached on every deploy
           echo 'goodnewsbears.news' > _site/CNAME

@@ -39,6 +39,17 @@ my $SHARE     = grep { $_ eq '--share' } @ARGV;   # --share => hosted/portable b
 my $OUT       = $SHARE ? "share.html" : "index.html";
 my $CUTOFF    = time() - $MAX_AGE * 24 * 3600;
 
+# Logo: the live site links the file; the portable --share build inlines it as a
+# data URI (the Artifact sandbox can't load a separate file).
+my $LOGO_FILE = "logo.png";
+my $LOGO_SRC  = "logo.png";
+if ($SHARE && -f $LOGO_FILE) {
+    require MIME::Base64;
+    open(my $lf, "<:raw", $LOGO_FILE) or die "Cannot read $LOGO_FILE: $!";
+    local $/; my $bytes = <$lf>; close $lf;
+    $LOGO_SRC = "data:image/png;base64," . MIME::Base64::encode_base64($bytes, "");
+}
+
 # region -> flag emoji shown on each card
 my %FLAG = (
     US     => "\x{1F1FA}\x{1F1F8}",
@@ -335,10 +346,9 @@ my $html = <<"HTML";
   .theme-toggle:hover{ transform:scale(1.08); border-color:var(--accent) }
 
   header.hero{ text-align:center; padding:44px 22px 20px }
-  .logo{ font-size:60px; line-height:1; margin-bottom:2px }
-  .sign-title{ margin:4px 0 2px }
-  .sign-title svg{ width:min(430px,84vw); height:auto; display:block; margin:0 auto;
-                   filter:drop-shadow(0 4px 8px rgba(0,0,0,.28)) }
+  .brandmark{ margin:0 0 4px }
+  .brandmark img{ width:min(340px,76vw); height:auto; display:block; margin:0 auto;
+                  filter:drop-shadow(0 4px 10px rgba(0,0,0,.28)) }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
   h1{ margin:0; font-size:clamp(30px,5vw,46px); letter-spacing:-.02em; font-weight:800 }
@@ -403,19 +413,9 @@ my $html = <<"HTML";
 <body>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light or dark theme"></button>
   <header class="hero">
-    <div class="logo">\x{1F43B}</div>
-    <h1 class="sign-title">
+    <h1 class="brandmark">
       <span class="visually-hidden">Good News Bears</span>
-      <svg viewBox="0 0 480 200" role="img" aria-hidden="true" focusable="false">
-        <rect x="96" y="118" width="18" height="74" rx="3" fill="#6B4A2E" stroke="#382415" stroke-width="2"/>
-        <rect x="366" y="118" width="18" height="74" rx="3" fill="#6B4A2E" stroke="#382415" stroke-width="2"/>
-        <rect x="28" y="24" width="424" height="128" rx="16" fill="#5A3A21" stroke="#382415" stroke-width="4"/>
-        <rect x="44" y="40" width="392" height="96" rx="10" fill="none" stroke="#E9D9B0" stroke-width="2.5"/>
-        <text x="240" y="88" text-anchor="middle" fill="#EBDCAF"
-              font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="44" letter-spacing="1.5">GOOD NEWS</text>
-        <text x="240" y="128" text-anchor="middle" fill="#EBDCAF"
-              font-family="Georgia,'Times New Roman',serif" font-weight="700" font-style="italic" font-size="36">Bears</text>
-      </svg>
+      <img src="$LOGO_SRC" alt="Good News Bears" width="760" height="709">
     </h1>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
     <p class="updated">Freshly gathered <b>$updated</b> &middot; $count_txt stories</p>

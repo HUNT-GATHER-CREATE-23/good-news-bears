@@ -42,10 +42,9 @@
   .theme-toggle:hover{ transform:scale(1.08); border-color:var(--accent) }
 
   header.hero{ text-align:center; padding:44px 22px 20px }
-  .logo{ font-size:60px; line-height:1; margin-bottom:2px }
-  .sign-title{ margin:4px 0 2px }
-  .sign-title svg{ width:min(430px,84vw); height:auto; display:block; margin:0 auto;
-                   filter:drop-shadow(0 4px 8px rgba(0,0,0,.28)) }
+  .brandmark{ margin:0 0 4px }
+  .brandmark img{ width:min(340px,76vw); height:auto; display:block; margin:0 auto;
+                  filter:drop-shadow(0 4px 10px rgba(0,0,0,.28)) }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
   h1{ margin:0; font-size:clamp(30px,5vw,46px); letter-spacing:-.02em; font-weight:800 }
@@ -110,22 +109,12 @@
 <body>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light or dark theme"></button>
   <header class="hero">
-    <div class="logo">🐻</div>
-    <h1 class="sign-title">
+    <h1 class="brandmark">
       <span class="visually-hidden">Good News Bears</span>
-      <svg viewBox="0 0 480 200" role="img" aria-hidden="true" focusable="false">
-        <rect x="96" y="118" width="18" height="74" rx="3" fill="#6B4A2E" stroke="#382415" stroke-width="2"/>
-        <rect x="366" y="118" width="18" height="74" rx="3" fill="#6B4A2E" stroke="#382415" stroke-width="2"/>
-        <rect x="28" y="24" width="424" height="128" rx="16" fill="#5A3A21" stroke="#382415" stroke-width="4"/>
-        <rect x="44" y="40" width="392" height="96" rx="10" fill="none" stroke="#E9D9B0" stroke-width="2.5"/>
-        <text x="240" y="88" text-anchor="middle" fill="#EBDCAF"
-              font-family="Georgia,'Times New Roman',serif" font-weight="700" font-size="44" letter-spacing="1.5">GOOD NEWS</text>
-        <text x="240" y="128" text-anchor="middle" fill="#EBDCAF"
-              font-family="Georgia,'Times New Roman',serif" font-weight="700" font-style="italic" font-size="36">Bears</text>
-      </svg>
+      <img src="logo.png" alt="Good News Bears" width="760" height="709">
     </h1>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
-    <p class="updated">Freshly gathered <b>Thursday, July 9, 2026 at 2:07 PM</b> &middot; 71 stories</p>
+    <p class="updated">Freshly gathered <b>Thursday, July 9, 2026 at 4:56 PM</b> &middot; 74 stories</p>
   </header>
 
   <nav class="filters wrap">
@@ -149,6 +138,69 @@
 
   <main class="wrap">
     <div class="grid" id="grid">
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/quivering-and-filled-with-happy-tears-man-shares-a-touching-story-on-a-good-news-phone/" target="_blank" rel="noopener">Quivering and filled with happy tears, man shares a touching story on a ‘good news’ phone</a></h2>
+    <p>Sometimes we just need to share our innermost thoughts and hear a little good news. So when the Instagram account We’re Not Really Strangers started sharing stories about kindness…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="PBS NewsHour">
+  <a class="thumb" href="https://www.pbs.org/newshour/health/how-to-protect-your-pets-from-the-new-world-screwworm-fly" target="_blank" rel="noopener"><img src="https://d3i6fh83elv35t.cloudfront.net/static/2023/12/GettyImages-661773477-1024x683.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#2A2D7C">PBS NewsHour</span>
+    <h2><a href="https://www.pbs.org/newshour/health/how-to-protect-your-pets-from-the-new-world-screwworm-fly" target="_blank" rel="noopener">How to protect your pets from the New World screwworm fly</a></h2>
+    <p>Two New World screwworm cases in dogs are among more than 30 confirmed instances in Texas and New Mexico, prompting warnings Wednesday from veterinarians and humane societies that…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Seattle Times">
+  <a class="thumb" href="https://www.seattletimes.com/sports/world-cup/kylian-mbappe-scores-his-eighth-goal-of-the-world-cup-equaling-lionel-messi-for-the-tournament-lead/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07092026_tzr_tzr_160130.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
+    <h2><a href="https://www.seattletimes.com/sports/world-cup/kylian-mbappe-scores-his-eighth-goal-of-the-world-cup-equaling-lionel-messi-for-the-tournament-lead/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">Kylian Mbappé leads France over Morocco in World Cup quarterfinals</a></h2>
+    <p>Kylian Mbappé had a goal and an assist after missing a first-half penalty kick, Ousmane Dembélé also scored and France beat Morocco 2-0 Thursday in the World Cup quarterfinals.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Al Jazeera">
+  
+  <div class="body">
+    <span class="badge" style="--c:#C79A3C">Al Jazeera</span>
+    <h2><a href="https://www.aljazeera.com/sports/2026/7/9/mbappe-and-dembele-net-as-france-beat-morocco-to-reach-world-cup-semifinal?traffic_source=rss" target="_blank" rel="noopener">Mbappe and Dembele net as France beat Morocco to reach World Cup semifinal</a></h2>
+    <p>France beat Morocco 2-0 in quarterfinals at FIFA World Cup 2026 and will meet Spain or Belgium next.</p>
+    <div class="meta">🇶🇦&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="PBS NewsHour">
+  
+  <div class="body">
+    <span class="badge" style="--c:#2A2D7C">PBS NewsHour</span>
+    <h2><a href="https://www.pbs.org/newshour/show/hermanos-gutierrez-perform-los-ojos-del-condor-and-reveal-inspiration-for-new-album" target="_blank" rel="noopener">Hermanos Gutierrez perform 'Los Ojos del C&amp;oacute;ndor' and reveal inspiration for new album</a></h2>
+    <p>The music of Hermanos Gutiérrez carries listeners across imagined landscapes, blending Latin, surf rock, folk and cinematic Western sounds into new instrumental journeys. Now the…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="NPR">
+  
+  <div class="body">
+    <span class="badge" style="--c:#5D3FD3">NPR</span>
+    <h2><a href="https://www.npr.org/2026/07/09/nx-s1-5887619/2026-world-cup-fifa-france-morocco-quarterfinal" target="_blank" rel="noopener">France downs Morocco 2-0 to advance to the World Cup semifinal</a></h2>
+    <p>Morocco was no match for France, which lost 2-0. The French, one of the pre-tournament favorites, move on to the World Cup semifinals against either Spain or Belgium. (Image…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/these-teachers-asked-kids-one-silly-question-before-class/" target="_blank" rel="noopener">These teachers asked kids one silly question before class. Behavior problems dropped 50%.</a></h2>
+    <p>Teachers don’t just teach the material. They challenge kids, nurture them, help them grow, and keep them focused. They support them while also holding them accountable when…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+  </div>
+</article>
 <article class="card" data-src="Upworthy">
   <a class="thumb" href="https://www.upworthy.com/have-people-ever-called-you-childlike-psychologists-say-it-could-mean-youre-gifted/" target="_blank" rel="noopener"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f9e0.png" loading="lazy" alt=""></a>
   <div class="body">
@@ -191,15 +243,6 @@
     <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
     <h2><a href="https://www.seattletimes.com/life/culture/new-wing-luke-executive-director-details-vision-for-museum/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">New Wing Luke executive director details vision for museum</a></h2>
     <p>Chrissy Shimizu began her role in May and returns to the museum after previously serving as its director of individual giving.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Seattle Times">
-  <a class="thumb" href="https://www.seattletimes.com/sports/world-cup/var-changes-are-the-worst-thing-about-the-best-world-cup/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07092026_VAR_tzr_113128.jpg?d=1200x630" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
-    <h2><a href="https://www.seattletimes.com/sports/world-cup/var-changes-are-the-worst-thing-about-the-best-world-cup/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">VAR changes are the worst thing about the best World Cup</a></h2>
-    <p>The video assistant referee (VAR), with its incessant replays and gutting goal reversals, is the worst thing about the best World Cup.</p>
     <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
   </div>
 </article>
@@ -246,15 +289,6 @@
     <h2><a href="https://www.npr.org/2026/07/09/nx-s1-5885040/robot-flying-aerial-aquatic-mit-birds" target="_blank" rel="noopener">A new kind of robot swims the seas and soars the skies</a></h2>
     <p>Inspired by diving birds, roboticists built the lightweight machines to move from water to air. The design may one day lead to robots that can monitor and sample the coastal…</p>
     <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Al Jazeera">
-  
-  <div class="body">
-    <span class="badge" style="--c:#C79A3C">Al Jazeera</span>
-    <h2><a href="https://www.aljazeera.com/sports/liveblog/2026/7/9/live-france-vs-morocco-fifa-world-cup-2026-quarterfinal?traffic_source=rss" target="_blank" rel="noopener">France vs Morocco LIVE: FIFA World Cup 2026 quarterfinal</a></h2>
-    <p>Live coverage, text updates and build-up from our full text commentary stream as Mbappe's France face Morocco.</p>
-    <div class="meta">🇶🇦&nbsp; Jul 9, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Euronews">
@@ -372,24 +406,6 @@
     <h2><a href="https://www.goodnewsnetwork.org/events060709/" target="_blank" rel="noopener">Good News in History, July 9</a></h2>
     <p>Happy 70th Birthday to actor Tom Hanks. Known for both his dramatic and comedic roles (Big, A League of Their Own, Sleepless in Seattle, and You’ve Got Mail), he is one of the…</p>
     <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/a-9-year-old-runner-came-in-last-place-her-coachs-epic-reframe-on-winning-is-sage-life-advice/" target="_blank" rel="noopener">A 9-year-old runner came in last place. Her coach’s epic reframe on ‘winning’ is sage life advice.</a></h2>
-    <p>Taking an “L” is never fun. But coming in last place can cut to the core. But society’s definition of losing isn’t the same as failure . In fact, it’s actually a form of winning ,…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/comforting-campfire-theory-is-helping-people-heal-from-painful-friendship-breakups/" target="_blank" rel="noopener">Comforting ‘Campfire Theory’ is helping people heal from painful friendship breakups</a></h2>
-    <p>In The Body , Stephen King famously wrote, “It happens sometimes. Friends come in and out of your life like busboys in a restaurant.” The novella was later adapted into the film…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
   </div>
 </article>
 <article class="card" data-src="The Optimist Daily">
