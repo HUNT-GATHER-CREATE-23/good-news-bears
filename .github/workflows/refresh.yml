@@ -1,0 +1,55 @@
+name: Refresh Good News Bears
+
+# Rebuilds the site from the live feeds and publishes it to GitHub Pages.
+on:
+  schedule:
+    # Runs daily. GitHub cron is in UTC (no daylight-saving). 14:00 UTC = 7 AM US
+    # Pacific in summer (PDT) / 6 AM in winter (PST).
+    - cron: '0 14 * * *'
+  workflow_dispatch:        # adds a "Run workflow" button in the Actions tab
+  push:
+    branches: [ main ]      # also republish whenever you push changes
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - name: Check out the project
+        uses: actions/checkout@v4
+
+      - name: Generate the site from the feeds
+        run: perl generate.pl        # Perl + curl are preinstalled on the runner
+
+      - name: Assemble the folder to publish
+        run: |
+          mkdir -p _site
+          cp index.html _site/index.html
+          touch _site/.nojekyll
+          # Custom domain — keeps goodnewsbears.news attached on every deploy
+          echo 'goodnewsbears.news' > _site/CNAME
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+
+      - name: Upload the site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deploy
+        uses: actions/deploy-pages@v4
