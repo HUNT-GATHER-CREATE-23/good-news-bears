@@ -347,7 +347,7 @@ my $html = <<"HTML";
 
   header.hero{ text-align:center; padding:44px 22px 20px }
   .brandmark{ margin:0 0 4px }
-  .brandmark img{ width:min(340px,76vw); height:auto; display:block; margin:0 auto;
+  .brandmark img{ width:min(380px,82vw); height:auto; display:block; margin:0 auto;
                   filter:drop-shadow(0 4px 10px rgba(0,0,0,.28)) }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
@@ -415,7 +415,7 @@ my $html = <<"HTML";
   <header class="hero">
     <h1 class="brandmark">
       <span class="visually-hidden">Good News Bears</span>
-      <img src="$LOGO_SRC" alt="Good News Bears" width="760" height="709">
+      <img src="$LOGO_SRC" alt="Good News Bears" width="820" height="561">
     </h1>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
     <p class="updated">Freshly gathered <b>$updated</b> &middot; $count_txt stories</p>
