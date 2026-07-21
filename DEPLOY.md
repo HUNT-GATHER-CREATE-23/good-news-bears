@@ -104,3 +104,34 @@ DNS changes can take from a few minutes up to ~24 hours to propagate.
   then hard-refresh.
 - **Private repo?** GitHub Pages needs a paid plan for private repos — keep it public
   (all the content is public news links anyway).
+
+---
+
+## Updating the logo
+
+The site always displays the file **`logo.png`** in this folder. To change the logo,
+replace that file and push.
+
+```bash
+cd "/Users/KATHY/GOOD NEWS copy"
+
+# 1. Shrink the new image for the web (point it at your new file).
+#    --cropToHeightWidth trims empty margins; adjust the numbers if it crops too much.
+sips --cropToHeightWidth 1300 1900 "/Users/KATHY/Downloads/YOUR-NEW-LOGO.png" --out logo.png
+sips --resampleWidth 820 logo.png
+
+# 2. Publish it
+git add -A
+git commit -m "Update logo"
+git push
+```
+
+Then wait ~30–60 seconds for the GitHub Action to deploy, and **hard refresh** the page
+(**Cmd + Shift + R**) — the filename doesn't change, so browsers cache the old one.
+
+Notes:
+- The file **must** be named `logo.png` (that's what the page references).
+- If your image is already tightly cropped, skip the crop line — just copy it in and run
+  the `--resampleWidth 820` line.
+- Keep it under ~1 MB so pages load fast. Raw AI-generated images are often 5–6 MB.
+- The displayed size is set in `generate.pl` under `.brandmark img` (`width:min(380px,82vw)`).

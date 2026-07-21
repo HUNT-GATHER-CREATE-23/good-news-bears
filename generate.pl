@@ -346,9 +346,10 @@ my $html = <<"HTML";
   .theme-toggle:hover{ transform:scale(1.08); border-color:var(--accent) }
 
   header.hero{ text-align:center; padding:44px 22px 20px }
-  .brandmark{ margin:0 0 4px }
-  .brandmark img{ width:min(380px,82vw); height:auto; display:block; margin:0 auto;
-                  filter:drop-shadow(0 4px 10px rgba(0,0,0,.28)) }
+  .brandmark{ margin:0 0 6px }
+  .brandmark img{ width:min(640px,92vw); height:auto; display:block; margin:0 auto }
+  /* masthead art is black on transparent — flip it to white for the dark theme */
+  :root[data-theme="dark"] .brandmark img{ filter:invert(1) }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
   h1{ margin:0; font-size:clamp(30px,5vw,46px); letter-spacing:-.02em; font-weight:800 }
@@ -415,7 +416,7 @@ my $html = <<"HTML";
   <header class="hero">
     <h1 class="brandmark">
       <span class="visually-hidden">Good News Bears</span>
-      <img src="$LOGO_SRC" alt="Good News Bears" width="820" height="561">
+      <img src="$LOGO_SRC" alt="Good News Bears" width="900" height="208">
     </h1>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
     <p class="updated">Freshly gathered <b>$updated</b> &middot; $count_txt stories</p>

@@ -42,9 +42,10 @@
   .theme-toggle:hover{ transform:scale(1.08); border-color:var(--accent) }
 
   header.hero{ text-align:center; padding:44px 22px 20px }
-  .brandmark{ margin:0 0 4px }
-  .brandmark img{ width:min(380px,82vw); height:auto; display:block; margin:0 auto;
-                  filter:drop-shadow(0 4px 10px rgba(0,0,0,.28)) }
+  .brandmark{ margin:0 0 6px }
+  .brandmark img{ width:min(640px,92vw); height:auto; display:block; margin:0 auto }
+  /* masthead art is black on transparent — flip it to white for the dark theme */
+  :root[data-theme="dark"] .brandmark img{ filter:invert(1) }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
   h1{ margin:0; font-size:clamp(30px,5vw,46px); letter-spacing:-.02em; font-weight:800 }
@@ -111,10 +112,10 @@
   <header class="hero">
     <h1 class="brandmark">
       <span class="visually-hidden">Good News Bears</span>
-      <img src="logo.png" alt="Good News Bears" width="820" height="561">
+      <img src="logo.png" alt="Good News Bears" width="900" height="208">
     </h1>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
-    <p class="updated">Freshly gathered <b>Thursday, July 9, 2026 at 5:00 PM</b> &middot; 74 stories</p>
+    <p class="updated">Freshly gathered <b>Tuesday, July 21, 2026 at 9:15 AM</b> &middot; 80 stories</p>
   </header>
 
   <nav class="filters wrap">
@@ -138,526 +139,706 @@
 
   <main class="wrap">
     <div class="grid" id="grid">
-<article class="card" data-src="Upworthy">
-  
+<article class="card" data-src="BBC News">
+  <a class="thumb" href="https://www.bbc.co.uk/news/articles/cqlz3p0ryylo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/9dbc/live/016bda30-84f7-11f1-aefd-63161e2ad075.jpg" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/quivering-and-filled-with-happy-tears-man-shares-a-touching-story-on-a-good-news-phone/" target="_blank" rel="noopener">Quivering and filled with happy tears, man shares a touching story on a ‘good news’ phone</a></h2>
-    <p>Sometimes we just need to share our innermost thoughts and hear a little good news. So when the Instagram account We’re Not Really Strangers started sharing stories about kindness…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="PBS NewsHour">
-  <a class="thumb" href="https://www.pbs.org/newshour/health/how-to-protect-your-pets-from-the-new-world-screwworm-fly" target="_blank" rel="noopener"><img src="https://d3i6fh83elv35t.cloudfront.net/static/2023/12/GettyImages-661773477-1024x683.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#2A2D7C">PBS NewsHour</span>
-    <h2><a href="https://www.pbs.org/newshour/health/how-to-protect-your-pets-from-the-new-world-screwworm-fly" target="_blank" rel="noopener">How to protect your pets from the New World screwworm fly</a></h2>
-    <p>Two New World screwworm cases in dogs are among more than 30 confirmed instances in Texas and New Mexico, prompting warnings Wednesday from veterinarians and humane societies that…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Seattle Times">
-  <a class="thumb" href="https://www.seattletimes.com/sports/world-cup/kylian-mbappe-scores-his-eighth-goal-of-the-world-cup-equaling-lionel-messi-for-the-tournament-lead/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07092026_tzr_tzr_160130.jpg?d=1200x630" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
-    <h2><a href="https://www.seattletimes.com/sports/world-cup/kylian-mbappe-scores-his-eighth-goal-of-the-world-cup-equaling-lionel-messi-for-the-tournament-lead/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">Kylian Mbappé leads France over Morocco in World Cup quarterfinals</a></h2>
-    <p>Kylian Mbappé had a goal and an assist after missing a first-half penalty kick, Ousmane Dembélé also scored and France beat Morocco 2-0 Thursday in the World Cup quarterfinals.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#66799E">BBC News</span>
+    <h2><a href="https://www.bbc.co.uk/news/articles/cqlz3p0ryylo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Angela Rayner: Cabinet comeback for one of Labour's biggest names</a></h2>
+    <p>The potential contender to replace Keir Starmer is now back in the cabinet under Andy Burnham.</p>
+    <div class="meta">🇬🇧&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Al Jazeera">
   
   <div class="body">
     <span class="badge" style="--c:#C79A3C">Al Jazeera</span>
-    <h2><a href="https://www.aljazeera.com/sports/2026/7/9/mbappe-and-dembele-net-as-france-beat-morocco-to-reach-world-cup-semifinal?traffic_source=rss" target="_blank" rel="noopener">Mbappe and Dembele net as France beat Morocco to reach World Cup semifinal</a></h2>
-    <p>France beat Morocco 2-0 in quarterfinals at FIFA World Cup 2026 and will meet Spain or Belgium next.</p>
-    <div class="meta">🇶🇦&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.aljazeera.com/sports/2026/7/21/fifa-destroying-football-for-the-world-cup-says-spanish-football-chief?traffic_source=rss" target="_blank" rel="noopener">FIFA ‘destroying football’ for the World Cup, says Spanish football chief</a></h2>
+    <p>In a scathing interview, La Liga President Javier Tebas says FIFA chief Gianni Infantino’s time is 'over'.</p>
+    <div class="meta">🇶🇦&nbsp; Jul 21, 2026</div>
   </div>
 </article>
-<article class="card" data-src="PBS NewsHour">
+<article class="card" data-src="Good News Network">
   
   <div class="body">
-    <span class="badge" style="--c:#2A2D7C">PBS NewsHour</span>
-    <h2><a href="https://www.pbs.org/newshour/show/hermanos-gutierrez-perform-los-ojos-del-condor-and-reveal-inspiration-for-new-album" target="_blank" rel="noopener">Hermanos Gutierrez perform 'Los Ojos del C&amp;oacute;ndor' and reveal inspiration for new album</a></h2>
-    <p>The music of Hermanos Gutiérrez carries listeners across imagined landscapes, blending Latin, surf rock, folk and cinematic Western sounds into new instrumental journeys. Now the…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="NPR">
-  
-  <div class="body">
-    <span class="badge" style="--c:#5D3FD3">NPR</span>
-    <h2><a href="https://www.npr.org/2026/07/09/nx-s1-5887619/2026-world-cup-fifa-france-morocco-quarterfinal" target="_blank" rel="noopener">France downs Morocco 2-0 to advance to the World Cup semifinal</a></h2>
-    <p>Morocco was no match for France, which lost 2-0. The French, one of the pre-tournament favorites, move on to the World Cup semifinals against either Spain or Belgium. (Image…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/these-teachers-asked-kids-one-silly-question-before-class/" target="_blank" rel="noopener">These teachers asked kids one silly question before class. Behavior problems dropped 50%.</a></h2>
-    <p>Teachers don’t just teach the material. They challenge kids, nurture them, help them grow, and keep them focused. They support them while also holding them accountable when…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  <a class="thumb" href="https://www.upworthy.com/have-people-ever-called-you-childlike-psychologists-say-it-could-mean-youre-gifted/" target="_blank" rel="noopener"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f9e0.png" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/have-people-ever-called-you-childlike-psychologists-say-it-could-mean-youre-gifted/" target="_blank" rel="noopener">Have people ever called you childlike? Psychologists say it could mean you’re gifted.</a></h2>
-    <p>The word “ childlike ” is often used negatively to describe adults. It implies that a grown-up lacks focus or seriousness or behaves immaturely. There are, however, many…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/pn-price-is-right-record-win-vanesa-mccaskell/" target="_blank" rel="noopener">An Army veteran risked it all on ‘The Price Is Right’ and won the biggest single-game prize in 54 years</a></h2>
-    <p>Vanesa McCaskell, a retired Army veteran from Virginia, had been keeping an extraordinary secret since December. When her episode of The Price Is Right finally aired on Mother’s…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  <a class="thumb" href="https://www.upworthy.com/the-fascinating-origin-story-of-the-hashtag-pound-sign-or-whatever-you-call-the-symbol/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/NewtonPoundSign.jpg?w=1024" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/the-fascinating-origin-story-of-the-hashtag-pound-sign-or-whatever-you-call-the-symbol/" target="_blank" rel="noopener">The fascinating origin story of the hashtag, pound sign, or whatever you call the # symbol</a></h2>
-    <p>Gen Xers in the United States grew up calling it a pound sign. Gen Z has always known it as a hashtag. The symbol that can be a shortcut for “number,” make a note sharp in music ,…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Upworthy">
-  <a class="thumb" href="https://www.upworthy.com/just-love-it-so-much-french-woman-in-the-u-s-says-this-wholesome-habit-sets-americans-apart/" target="_blank" rel="noopener"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f63b.png" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/just-love-it-so-much-french-woman-in-the-u-s-says-this-wholesome-habit-sets-americans-apart/" target="_blank" rel="noopener">‘Just love it so much’: French woman in the U.S. says this wholesome habit sets Americans apart</a></h2>
-    <p>American culture is unlike any other in the world. From body language to the way people dress , the United States has a unique way of life that visitors from other countries are…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#E8A13A">Good News Network</span>
+    <h2><a href="https://www.goodnewsnetwork.org/new-species-of-monkey-with-orange-lips-found-in-dr-congo-for-just-the-5th-time-in-75-years/" target="_blank" rel="noopener">New Species of Monkey Found in DR Congo Shows How Much There’s Left to Discover</a></h2>
+    <p>When news reaches the public that a new species has been identified, the chances really are 9 times out of 10 that it’s some deep sea slug or a spider. From the Congo comes the…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="The Seattle Times">
-  <a class="thumb" href="https://www.seattletimes.com/life/culture/new-wing-luke-executive-director-details-vision-for-museum/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07052026_tzr_tzr_171300.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.seattletimes.com/nation-world/nation/smithsonian-history-museum-chief-rejects-white-house-criticism-of-its-leaders-as-radical-activists/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/urnpublicidap.orgcda2e8cff29f56a34e5a5d510bb45cdaTrump_Smithsonian_42912.jpg?d=1200x630" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
-    <h2><a href="https://www.seattletimes.com/life/culture/new-wing-luke-executive-director-details-vision-for-museum/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">New Wing Luke executive director details vision for museum</a></h2>
-    <p>Chrissy Shimizu began her role in May and returns to the museum after previously serving as its director of individual giving.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.seattletimes.com/nation-world/nation/smithsonian-history-museum-chief-rejects-white-house-criticism-of-its-leaders-as-radical-activists/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">Smithsonian history museum chief rejects White House criticism of its leaders as radical activists</a></h2>
+    <p>The director of the Smithsonian's National Museum of American History is pushing back against a White House report labeling the institution's leadership as radical activists.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Upworthy">
-  <a class="thumb" href="https://www.upworthy.com/ten-year-old-butterfly-researcher-discovers-that-memories-an-be-passed-down-through-generations/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/Metamorphosis_of_butterfly_PSF.png" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.upworthy.com/behavior-expert-one-habit-to-be-more-likable-ex1/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/01/origin_55f9b7.png?w=1200&amp;#038;quality=80" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/ten-year-old-butterfly-researcher-discovers-that-memories-an-be-passed-down-through-generations/" target="_blank" rel="noopener">Ten-year-old butterfly researcher discovers that memories can be passed down through generations</a></h2>
-    <p>The typical elementary-aged child in Japan spends their free time playing baseball , collecting Pokémon cards, and reading all the manga they can get their hands on. For Jo Nagai…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.upworthy.com/behavior-expert-one-habit-to-be-more-likable-ex1/" target="_blank" rel="noopener">Behavior expert shares the one powerful habit that makes you more likable</a></h2>
+    <p>There are two statements kids often make that decades of scientific research suggest are actually true: “It takes one to know one” and “If you don’t have anything nice to say,…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Upworthy">
-  <a class="thumb" href="https://www.upworthy.com/pajamas-checkmate-and-other-common-english-words-you-had-no-idea-were-farsi/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/WP-Heather-TOP-SPLASH-2026-07-08T144304.680.jpg?w=1024" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.upworthy.com/social-skills-coach-shares-4-phrases-to-keep-conversation-rolling-so-it-never-gets-awkward-ex1/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/02/origin_e1f433.png?w=1200&amp;#038;quality=80" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#B57EDC">Upworthy</span>
-    <h2><a href="https://www.upworthy.com/pajamas-checkmate-and-other-common-english-words-you-had-no-idea-were-farsi/" target="_blank" rel="noopener">‘Pajamas,’ ‘checkmate,’ and other common English words you had no idea were Farsi</a></h2>
-    <p>Most people can spot a French or Spanish loanword in English . But there are dozens of words woven into everyday conversation that trace back to an even older source, one that…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.upworthy.com/social-skills-coach-shares-4-phrases-to-keep-conversation-rolling-so-it-never-gets-awkward-ex1/" target="_blank" rel="noopener">Social skills coach shares 4 prompts to keep conversations ‘rolling’ so they never get awkward</a></h2>
+    <p>Making small talk can be frustrating for many reasons. It’s nerve-wracking to come up with things to talk about with someone you hardly know that aren’t “How’s the weather?” or…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/the-internet-slams-a-man-drinking-water-while-his-partner-gives-birth-but-a-nurse-sets-them-straight-ex1/" target="_blank" rel="noopener">The internet slams a man drinking water while his partner gives birth, but a nurse sets them straight</a></h2>
+    <p>Many couples post videos of their child’s birth at the hospital, but one particular video was overly scrutinized online . In the social media post, the father-to-be is seated and…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  <a class="thumb" href="https://www.upworthy.com/5-bad-conversation-habits-ex1/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2025/12/origin_2f5d48.jpg?w=1200&amp;#038;quality=80" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/5-bad-conversation-habits-ex1/" target="_blank" rel="noopener">5 conversation habits that unintentionally push people away, and what to do instead</a></h2>
+    <p>People are innately social creatures. Even introverts need human connection , so it can be upsetting to learn that something you’ve said unintentionally shut down a conversation .…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/rock-kicked-for-200-days-ex1/" target="_blank" rel="noopener">Guy kicks a single rock for 200 days to see if it’ll become a perfect sphere. Here’s how it went.</a></h2>
+    <p>When Portland-based Owen Gail isn’t selling thrifted clothing at his Shirtzenpantz store, he’s outside kicking rocks. Well, one rock in particular: a granodiorite named…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Euronews">
+  
+  <div class="body">
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/2026/07/21/messis-strange-pre-final-video-puzzles-world-cup-fans" target="_blank" rel="noopener">Messi's strange pre-final video puzzles World Cup fans</a></h2>
+    <p>Messi’s team talk before the 2026 World Cup final sparked theories online. Journalist Eduardo Feinmann relayed claims that Messi’s call to 'forget everything' was linked to…</p>
+    <div class="meta">🌍&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="BBC News">
-  <a class="thumb" href="https://www.bbc.co.uk/news/articles/cevlw4wnlmxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/1ba4/live/672ca2b0-7b73-11f1-9af8-1139253a4180.jpg" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.bbc.co.uk/sport/football/articles/c8jn91e9mdyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/f78a/live/68f61050-84f0-11f1-8a12-25ab4abfbe1c.jpg" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#66799E">BBC News</span>
-    <h2><a href="https://www.bbc.co.uk/news/articles/cevlw4wnlmxo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Most popular baby names for boys and girls in 2025 revealed</a></h2>
-    <p>The Office for National Statistics releases its annual data on baby names, with Olivia remaining most popular for girls and Muhammad for boys.</p>
-    <div class="meta">🇬🇧&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.bbc.co.uk/sport/football/articles/c8jn91e9mdyo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Argentina's Fernandez defends team after ugly scenes in World Cup final loss to Spain</a></h2>
+    <p>Midfielder Enzo Fernandez claims Argentina represented their nation &quot;in the best possible way&quot; in the World Cup.</p>
+    <div class="meta">🇬🇧&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/6-new-electric-buses-in-colorado-double-as-backup-batteries-for-the-denver-areas-power-grid/" target="_blank" rel="noopener">6 New Electric Buses in Colorado Double as Backup Batteries for Denver Area Power Grid</a></h2>
-    <p>A Colorado town’s new electric school bus fleet also doubles as a backup battery to help out during peak power demand. Charging at night, using power to pick up, drop off, and…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/british-runner-calls-his-shot-and-breaks-world-record-in-the-mile-after-it-stood-for-27-years/" target="_blank" rel="noopener">British Runner ‘Calls His Shot’ and Breaks World Record in the Mile–After it Stood for 27 Years</a></h2>
+    <p>Scottish runner Josh Kerr just put in the fastest mile time in human history, breaking a record that had stood for 27 years after clocking 3:42.66. Set at the recent London…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Seattle Times">
+  <a class="thumb" href="https://www.seattletimes.com/entertainment/what-to-stream-the-dink-stuart-fails-to-save-the-universe/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07202026_TZR_Apple_TV-The_Dink_tzr_143012.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
+    <h2><a href="https://www.seattletimes.com/entertainment/what-to-stream-the-dink-stuart-fails-to-save-the-universe/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">What to stream: ‘The Dink,’ ‘Stuart Fails to Save the Universe’</a></h2>
+    <p>Charli xcx's new album and a pickleball movie starring Jake Johnson are some of the new television, films, music and games headed to a device near you.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Seattle Times">
+  <a class="thumb" href="https://www.seattletimes.com/entertainment/movies/dinner-at-a-movie-finds-a-popcorn-paradise-on-a-day-trip-to-yelm/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07202026_theater_1304542.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
+    <h2><a href="https://www.seattletimes.com/entertainment/movies/dinner-at-a-movie-finds-a-popcorn-paradise-on-a-day-trip-to-yelm/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">Dinner at a Movie finds a popcorn paradise on a day trip to Yelm</a></h2>
+    <p>Road trip! Critics Bethany Jean Clement and Moira Macdonald continue their important movie-theater-food-and-drink investigations, heading south to Yelm.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Seattle Times">
+  <a class="thumb" href="https://www.seattletimes.com/life/culture/world-cup-gave-seattles-dating-scene-a-boost/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2026/07/07162026_TZR_Occidental_Square_Fanzone-06192026-ES_.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
+    <h2><a href="https://www.seattletimes.com/life/culture/world-cup-gave-seattles-dating-scene-a-boost/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">World Cup gave Seattle’s notoriously bleak dating scene a kick-start</a></h2>
+    <p>Perhaps what single Seattleites needed to jumpstart their love life was more fish in the sea. And the World Cup brought it.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Euronews">
+  
+  <div class="body">
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/next/2026/07/21/fabricated-ai-animal-videos-are-distorting-how-we-see-wildlife-researchers-warn" target="_blank" rel="noopener">Fabricated AI animal videos are distorting how we see wildlife, researchers warn</a></h2>
+    <p>AI-generated animal footage is racking up millions of views online, but researchers warn it is also distorting public understanding of wildlife behaviour and could be undermining…</p>
+    <div class="meta">🌍&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Seattle Times">
+  <a class="thumb" href="https://www.seattletimes.com/nation-world/rescued-big-bear-bald-eagle-jackie-is-stable-wildlife-nonprofit-says/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener"><img src="https://images.seattletimes.com/wp-content/uploads/2025/06/06032025_eaglets6525-tzr_tzr_042645.jpg?d=1200x630" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#0E8A8A">The Seattle Times</span>
+    <h2><a href="https://www.seattletimes.com/nation-world/rescued-big-bear-bald-eagle-jackie-is-stable-wildlife-nonprofit-says/?utm_source=RSS&amp;utm_medium=Referral&amp;utm_campaign=RSS_all" target="_blank" rel="noopener">Rescued Big Bear bald eagle Jackie is ‘stable,’ wildlife nonprofit says</a></h2>
+    <p>Jackie was rescued by personnel with the L.A. County Parks and Recreation San Dimas Raptor Rescue. Video from the department showed the bird in Big Bear Lake at one point.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Al Jazeera">
+  
+  <div class="body">
+    <span class="badge" style="--c:#C79A3C">Al Jazeera</span>
+    <h2><a href="https://www.aljazeera.com/sports/2026/7/21/how-a-64-team-world-cup-could-transform-footballs-economics?traffic_source=rss" target="_blank" rel="noopener">How a 64-team World Cup could transform football’s economics</a></h2>
+    <p>Spain, Portugal and Morocco are the cohosts of the 2030 edition, but we await confirmation of 48 or 64 competitors.</p>
+    <div class="meta">🇶🇦&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Good News Network">
+  
+  <div class="body">
+    <span class="badge" style="--c:#E8A13A">Good News Network</span>
+    <h2><a href="https://www.goodnewsnetwork.org/coral-reef-long-presumed-dead-is-rediscovered-teeming-with-life-off-coast-of-africa/" target="_blank" rel="noopener">Coral Reef Long Presumed Dead Is Rediscovered ‘Teeming with Life’ Off Coast of Africa</a></h2>
+    <p>A coral reef long presumed dead has been rediscovered “teeming with life” off the coast of West Africa. Surveys conducted in the 1960s that were focused on identifying promising…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="NPR">
   
   <div class="body">
     <span class="badge" style="--c:#5D3FD3">NPR</span>
-    <h2><a href="https://www.npr.org/2026/07/09/nx-s1-5885040/robot-flying-aerial-aquatic-mit-birds" target="_blank" rel="noopener">A new kind of robot swims the seas and soars the skies</a></h2>
-    <p>Inspired by diving birds, roboticists built the lightweight machines to move from water to air. The design may one day lead to robots that can monitor and sample the coastal…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.npr.org/sections/the-picture-show/2026/07/21/nx-s1-5897423/soccer-in-us-nepali-bhutanese-community" target="_blank" rel="noopener">How soccer brings a Bhutanese community together in Harrisburg, Pa.</a></h2>
+    <p>Harrisburg is home to one of the nation's largest communities of Nepali-speaking Bhutanese refugees and their families. Through soccer, generations have found connection,…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Euronews">
   
   <div class="body">
     <span class="badge" style="--c:#4C86C6">Euronews</span>
-    <h2><a href="http://www.euronews.com/my-europe/2026/07/09/eu-set-to-greenlight-hungarys-10-billion-recovery-envelope" target="_blank" rel="noopener">EU set to greenlight Hungary's €10 billion recovery envelope</a></h2>
-    <p>The decision would pave the way for the release of post-pandemic funds that had long been withheld over corruption concerns.</p>
-    <div class="meta">🌍&nbsp; Jul 9, 2026</div>
+    <h2><a href="http://www.euronews.com/2026/07/21/fifa-opens-investigation-into-argentina-over-post-world-cup-final-incidents" target="_blank" rel="noopener">FIFA opens investigation into Argentina over post-World Cup final incidents</a></h2>
+    <p>Football's governing body has appointed a prosecutor to assess the clashes between Argentine and Spanish players at the full-time whistle at the Metlife Stadium as well as the…</p>
+    <div class="meta">🌍&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The New York Times">
+  <a class="thumb" href="https://www.nytimes.com/2026/07/21/upshot/solar-panels-prices-batteries.html" target="_blank" rel="noopener"><img src="https://static01.nyt.com/images/2026/07/20/multimedia/2026-06-25-solar-nm-index/2026-06-25-solar-nm-index-mediumSquareAt3X-v6.png" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#4A4A4A">The New York Times</span>
+    <h2><a href="https://www.nytimes.com/2026/07/21/upshot/solar-panels-prices-batteries.html" target="_blank" rel="noopener">Why States Are Making It Harder to Save Money With Solar Panels</a></h2>
+    <p>The changes are costing homeowners money. But they also reflect a changing grid — and the need for home batteries.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Reasons to be Cheerful">
+  <a class="thumb" href="https://reasonstobecheerful.world/electric-vehicles-air-quality-health/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/07/3840px-Beijing_34_4941662102-scaled.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/electric-vehicles-air-quality-health/" target="_blank" rel="noopener">Are Electric Cars Making Us Healthier?</a></h2>
+    <p>This story has been co-published by Reasons to be Cheerful and the Outrider Foundation . A t the turn of the century Beijing had one million vehicles. By 2010, just a decade…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6260/Montana-Teenand-039-s-Rodeo-Skills-Save-Drowning-Man-in-Incredible-Yellowstone-River-Rescue" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/lasso-rescue-LG-6a5f67bb995f80.85427318.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6260/Montana-Teenand-039-s-Rodeo-Skills-Save-Drowning-Man-in-Incredible-Yellowstone-River-Rescue" target="_blank" rel="noopener">Montana Teenand#039;s Rodeo Skills Save Drowning Man in Incredible Yellowstone River Rescue</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Euronews">
+  
+  <div class="body">
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/culture/2026/07/21/kick-argentina-out-of-the-world-cup-petition-nearly-breaks-guinness-world-record" target="_blank" rel="noopener">'Kick Argentina out of the World Cup' petition nearly breaks Guinness World Record</a></h2>
+    <p>FIFA has confirmed that Argentina will face an investigation into the “disgusting” scenes at the end of the World Cup final. The team has gone viral for all the wrong reasons at…</p>
+    <div class="meta">🌍&nbsp; Jul 21, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/scientists-identify-gene-at-the-center-of-muscular-aging-and-how-exercise-defeats-it/" target="_blank" rel="noopener">Scientists Identify Gene at the Center of Muscular Aging – And How Exercise Defeats it</a></h2>
-    <p>Respect cardiologist Dr. Benjamin Levine said last year in an interview that exercise “needs to be part of your personal hygiene, like brushing your teeth or taking a shower.”…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/events060721/" target="_blank" rel="noopener">Good News in History, July 21</a></h2>
+    <p>36 years ago today, Roger Waters performed The Wall in Berlin for 350,000 fans to commemorate the fall of the Berlin Wall eight months earlier. Staged on a vacant lot between…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 21, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Los Angeles Times">
+<article class="card" data-src="Euronews">
   
   <div class="body">
-    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/politics/story/2026-07-09/dodgers-scheduled-to-visit-white-house-in-late-july-to-celebrate-2025-world-series-title" target="_blank" rel="noopener">Dodgers scheduled to visit White House in late July to celebrate 2025 World Series win</a></h2>
-    <p>The visit will take place during an East Coast road trip following next week's All-Star break and will be the third time the White House has hosted the team this decade.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/video/2026/07/21/victorious-spanish-team-parade-through-madrid-after-world-cup-triumph" target="_blank" rel="noopener">Victorious Spanish team parade through Madrid after World Cup triumph</a></h2>
+    <p>Spain's World Cup-winning team toured Madrid on an open-top bus as huge crowds lined the streets to celebrate their victory over Argentina</p>
+    <div class="meta">🌍&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Euronews">
+  
+  <div class="body">
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/my-europe/2026/07/21/europe-today-spain-celebrates-world-cup-triumph-as-burnham-takes-office-in-the-uk" target="_blank" rel="noopener">Europe Today: Spain celebrates World Cup triumph as Burnham takes office in the UK</a></h2>
+    <p>Two million people took to the streets of Madrid to welcome home their World Cup heroes last night. In the UK, Andy Burnham delivered his first address to the nation as Prime…</p>
+    <div class="meta">🌍&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Positive News">
+  
+  <div class="body">
+    <span class="badge" style="--c:#3FA796">Positive News</span>
+    <h2><a href="https://www.positive.news/society/the-rotterdam-building-promising-a-better-future/" target="_blank" rel="noopener">‘A place of hope and solutions’: the building promising a better future</a></h2>
+    <p>The post ‘A place of hope and solutions’: the building promising a better future appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Euronews">
+  
+  <div class="body">
+    <span class="badge" style="--c:#4C86C6">Euronews</span>
+    <h2><a href="http://www.euronews.com/health/2026/07/21/how-to-keep-babies-safe-when-temperatures-soar-this-summer" target="_blank" rel="noopener">How to keep babies safe when temperatures soar this summer</a></h2>
+    <p>As heatwaves grow more frequent and severe, here's what parents need to know to keep infants and young children safe in the heat.</p>
+    <div class="meta">🌍&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/pn-flight-attendant-shorts-plane-advice/" target="_blank" rel="noopener">A flight attendant with 11 years in the air says she’ll never wear shorts on a plane</a></h2>
+    <p>Charity Moore has spent 11 years as a flight attendant , which is long enough to have seen what happens on airplane seats when nobody’s watching. As a result, she has one firm…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/pn-inherited-house-neighborhood-water-bill-baltimore/" target="_blank" rel="noopener">She inherited her late father’s house and a $228,000 water bill for the entire neighborhood</a></h2>
+    <p>When Kristina Moore inherited her late father’s house in Northeast Baltimore, she braced for the ordinary work of settling an estate: the paperwork, the maintenance, the slow…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Upworthy">
+  <a class="thumb" href="https://www.upworthy.com/how-one-tiny-lyric-change-made-the-pina-colada-song-one-of-the-biggest-hits-of-the-70s/" target="_blank" rel="noopener"><img src="https://www.upworthy.com/wp-content/uploads/sites/2/2026/07/PC-.jpg?w=1024" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#B57EDC">Upworthy</span>
+    <h2><a href="https://www.upworthy.com/how-one-tiny-lyric-change-made-the-pina-colada-song-one-of-the-biggest-hits-of-the-70s/" target="_blank" rel="noopener">How one tiny lyric change made the ‘Piña Colada Song’ one of the biggest hits of the ’70s</a></h2>
+    <p>There are a billion different decisions that go into making a hit song . A songwriter has to settle on a tempo, key, chord changes, and lyrics. The band has to manage the small…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="BBC News">
-  <a class="thumb" href="https://www.bbc.co.uk/news/articles/cj9gxwynrlwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/6f17/live/5a4c81b0-7b8b-11f1-bee8-53ce494e1abc.png" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.bbc.co.uk/news/articles/c5yrjgj984qo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener"><img src="https://ichef.bbci.co.uk/ace/standard/240/cpsprodpb/a5ec/live/5e399080-8435-11f1-bee8-53ce494e1abc.jpg" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#66799E">BBC News</span>
-    <h2><a href="https://www.bbc.co.uk/news/articles/cj9gxwynrlwo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Has your area gone football-mad? We've mapped World Cup viewing</a></h2>
-    <p>We've analysed BBC iPlayer viewing across the UK to see where the tournament has been most popular.</p>
-    <div class="meta">🇬🇧&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.bbc.co.uk/news/articles/c5yrjgj984qo?at_medium=RSS&amp;at_campaign=rss" target="_blank" rel="noopener">Your tips on getting a fussy child to eat, and six recipes they might love</a></h2>
+    <p>Want to avoid battles over broccoli and squabbles over spinach? We've asked you for your advice on how to cope at mealtimes over the summer holidays.</p>
+    <div class="meta">🇬🇧&nbsp; Jul 20, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Euronews">
-  
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/in-cubas-fuel-crisis-solar-tricycles-took-the-streets/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_142288346_L-1024x682.jpg" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#4C86C6">Euronews</span>
-    <h2><a href="http://www.euronews.com/video/2026/07/09/paris-city-hall-draped-in-les-bleus-colours-ahead-of-world-cup-quarter-final" target="_blank" rel="noopener">Paris City Hall draped in Les Bleus colours ahead of World Cup quarter-final</a></h2>
-    <p>Paris City Hall displays Les Bleus banners ahead of France's 2026 World Cup quarter-final against Morocco, showing support for the national team.</p>
-    <div class="meta">🌍&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/in-cubas-fuel-crisis-solar-tricycles-took-the-streets/" target="_blank" rel="noopener">In Cuba’s fuel crisis, solar tricycles took the streets</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Cuba has long been known for its vintage cars — the American ones that kept rolling through decades of embargo and scarcity, repaired with…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Euronews">
-  
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/why-summer-slips-away-so-quickly-and-how-to-make-it-feel-longer-according-to-brain-science/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_160977390_L-1024x684.jpg" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#4C86C6">Euronews</span>
-    <h2><a href="http://www.euronews.com/culture/2026/07/09/erling-haalands-2016-rap-song-resurfaces-and-turns-into-viral-world-cup-hit" target="_blank" rel="noopener">Erling Haaland’s 2016 rap song resurfaces and turns into viral World Cup hit</a></h2>
-    <p>Before he was spearheading Norway to their first-ever World Cup quarterfinal, MVP-contender Erling Haaland dabbled in rap. A song from 2016 has resurfaced and exploded online,…</p>
-    <div class="meta">🌍&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/why-summer-slips-away-so-quickly-and-how-to-make-it-feel-longer-according-to-brain-science/" target="_blank" rel="noopener">Why summer slips away so quickly and how to make it feel longer, according to brain science</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM It’s hard to believe it’s almost August; if you’re anything like us, you’re probably wondering where June and July went. It happens every…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Los Angeles Times">
+  <a class="thumb" href="https://www.latimes.com/environment/story/2026-07-20/bald-eagle-rescued-in-big-bear-likely-jackie-is-in-stable-condition" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/2c8fea9/2147483647/strip/false/crop/1777x1428+0+0/resize/1500x1205!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fba%2Ffc%2F8622999b4d45a83954b577784145%2Fscreenshot-jackie-eagle-01.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
+    <h2><a href="https://www.latimes.com/environment/story/2026-07-20/bald-eagle-rescued-in-big-bear-likely-jackie-is-in-stable-condition" target="_blank" rel="noopener">Found weak and disheveled, rescued eagle — probably Big Bear's Jackie — receiving care in Ojai</a></h2>
+    <p>Found weak and disheveled along the shoreline, the raptor believed to be nest cam star Jackie is receiving care while experts investigate what caused its decline.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="PBS NewsHour">
+  <a class="thumb" href="https://www.pbs.org/newshour/show/the-highlights-and-controversies-of-the-2026-world-cup" target="_blank" rel="noopener"><img src="https://d3i6fh83elv35t.cloudfront.net/static/2026/07/wordlcup-1024x673.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#2A2D7C">PBS NewsHour</span>
+    <h2><a href="https://www.pbs.org/newshour/show/the-highlights-and-controversies-of-the-2026-world-cup" target="_blank" rel="noopener">The highlights and controversies of the 2026 World Cup</a></h2>
+    <p>There was a hero's welcome for the Spanish soccer team as they arrived in Madrid, where throngs of fans cheered their triumphant World Cup win. Spain's victory ended Argentina and…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Los Angeles Times">
+  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-20/man-who-apparently-jumped-from-la-city-hall-remembered-as-gifted-baseball-player" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/ec92a35/2147483647/strip/false/crop/5464x7280+0+0/resize/1126x1500!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F8d%2Fbb%2F24b139614c79ada8dae0bbb56123%2F1555847-me-operation-firewall-gem-012.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
+    <h2><a href="https://www.latimes.com/california/story/2026-07-20/man-who-apparently-jumped-from-la-city-hall-remembered-as-gifted-baseball-player" target="_blank" rel="noopener">Young man who apparently jumped from L.A. City Hall remembered as gifted baseball player</a></h2>
+    <p>Family and friends remembered the 19-year-old man as a devoted son and brother and a gifted baseball player.</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/oregon-records-5-years-of-zero-pesticide-related-deaths-in-bees/" target="_blank" rel="noopener">Oregon Records 5 Years of Zero Pesticide-Related Deaths in Bees</a></h2>
-    <p>According to an inaugural report on the health of bees in Oregon, scientists at Oregon State University have found no incidences of pesticide-related bee deaths since 2021. This…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/after-5-yo-diagnosed-with-rare-disease-younger-sister-wanted-to-be-her-brave-bone-marrow-donor/" target="_blank" rel="noopener">After 5-yo Diagnosed with Rare Disease, Little Sister Wanted to Be Her ‘Brave’ Bone Marrow Donor</a></h2>
+    <p>From Salt Lake City comes the touching story of a 5-year-old girl saved thanks to a bone marrow transplant from none other than her 2-year-old sister. Emma Meline was diagnosed…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Euronews">
+<article class="card" data-src="Los Angeles Times">
   
   <div class="body">
-    <span class="badge" style="--c:#4C86C6">Euronews</span>
-    <h2><a href="http://www.euronews.com/culture/2026/07/09/who-is-count-binface-the-alien-space-warrior-standing-against-brexit-champion-nigel-farage" target="_blank" rel="noopener">Who is Count Binface – the alien space warrior standing against Brexit champion Nigel Farage?</a></h2>
-    <p>In a week when the race to become Britain’s next prime minister is effectively a one-horse race, there seems to be more suspense in another contest pitting Brexit champion Nigel…</p>
-    <div class="meta">🌍&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Euronews">
-  
-  <div class="body">
-    <span class="badge" style="--c:#4C86C6">Euronews</span>
-    <h2><a href="http://www.euronews.com/video/2026/07/09/robert-wun-unveils-childsplay-couture-collection-in-paris" target="_blank" rel="noopener">Robert Wun unveils 'Childsplay' couture collection in Paris</a></h2>
-    <p>Robert Wun presents his 'Childsplay' couture collection during Paris Haute Couture Week, blending dramatic designs with childhood-inspired creativity.</p>
-    <div class="meta">🌍&nbsp; Jul 9, 2026</div>
+    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
+    <h2><a href="https://www.latimes.com/california/story/2026-07-20/how-2026-world-cup-finally-taught-me-to-love-soccer" target="_blank" rel="noopener">Arellano: How this World Cup finally taught me to love soccer</a></h2>
+    <p>Over 104 games, a bunch of questionable VAR calls, another heartbreaking downfall by Mexico and a brilliant goal by Spain's Ferran Torres, I learned why soccer is the world's most…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/hidden-artworks-in-gold-surprise-conservators-renovating-americas-oldest-basilica-look/" target="_blank" rel="noopener">Hidden Artworks in Gold Surprised Renovators of America’s Oldest Basilica (LOOK)</a></h2>
-    <p>Renovators recently washing an arch high up on the ceiling of St. Mary’s Basilica in Minneapolis were left stunned when a sheen of gold suddenly began to gleam from beneath a…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/biotech-startup-breeds-blight-tolerant-american-chestnut-without-any-genetic-defects/" target="_blank" rel="noopener">Biotech Startup Breeds Blight Tolerant American Chestnut Without Any Genetic Defects</a></h2>
+    <p>At the intersection of big data, forestry, and genomics, a biotech startup has birthed a generation of “elite” blight-resistant American chestnut trees without deep genetic…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Positive News">
   
   <div class="body">
     <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/society/revealed-the-worlds-best-cities-in-2026/" target="_blank" rel="noopener">Revealed: the world’s most liveable cities in 2026</a></h2>
-    <p>The post Revealed: the world’s most liveable cities in 2026 appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 9, 2026</div>
+    <h2><a href="https://www.positive.news/society/the-underground-fridge-that-keeps-food-cool-even-in-a-heatwave/" target="_blank" rel="noopener">The underground fridge that keeps food cool – even in a heatwave</a></h2>
+    <p>The post The underground fridge that keeps food cool – even in a heatwave appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Good News Network">
+  
+  <div class="body">
+    <span class="badge" style="--c:#E8A13A">Good News Network</span>
+    <h2><a href="https://www.goodnewsnetwork.org/senior-center-worker-celebrates-50-years-at-a-single-job-without-taking-any-sick-days/" target="_blank" rel="noopener">Senior Center Worker Celebrates 50 Years on the Job Without Using a Single Sick Day</a></h2>
+    <p>Tom McKievick says his job is challenging yet entertaining, a good combination for a perspective career. Yet when he saw the newspaper ad for the job at Fredericka Manor senior…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Good News Network">
+  
+  <div class="body">
+    <span class="badge" style="--c:#E8A13A">Good News Network</span>
+    <h2><a href="https://www.goodnewsnetwork.org/longest-undersea-road-tunnel-to-shorten-travel-times-by-5-hours-and-feature-great-hall-of-lights/" target="_blank" rel="noopener">Longest Undersea Road to Shorten Travel Times by 5 Hours and Feature ‘Great Hall of Lights’</a></h2>
+    <p>1,000 feet below the North Sea, blast after blast brings Norwegian engineers closer and closer to completion of the longest undersea road tunnel on Earth. No one better to do it…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Reasons to be Cheerful">
+  
+  <div class="body">
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/what-if-we-never-built-another-new-building/" target="_blank" rel="noopener">What If We Never Built Another New Building?</a></h2>
+    <p>S wiss architect Barbara Buser has spent decades proving that the greenest building is often the one already standing. When one unscrews a section of the bright red sheet metal…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6248/Trapped-in-a-Bathtub-for-Nine-Days-82-Year-Old-Woman-Survived-With-Faith-Determination-and-One-Remarkable-Idea" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/woman-survives-9-days-bathtub-LG-6a4f9e602412b6.59710140.webp" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6259/This-Grandpa-Has-Spent-8-Years-Cuddling-a-Hospitaland-039-s-Tiniest-Fighters-Every-Week" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/cuddles-babies-good-news-LG-6a5e15632628d9.46095725.webp" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6248/Trapped-in-a-Bathtub-for-Nine-Days-82-Year-Old-Woman-Survived-With-Faith-Determination-and-One-Remarkable-Idea" target="_blank" rel="noopener">Trapped in a Bathtub for Nine Days, 82-Year-Old Woman Survived With Faith, Determination, and One Remarkable Idea</a></h2>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6259/This-Grandpa-Has-Spent-8-Years-Cuddling-a-Hospitaland-039-s-Tiniest-Fighters-Every-Week" target="_blank" rel="noopener">This Grandpa Has Spent 8 Years Cuddling a Hospitaland#039;s Tiniest Fighters Every Week</a></h2>
     <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/events060709/" target="_blank" rel="noopener">Good News in History, July 9</a></h2>
-    <p>Happy 70th Birthday to actor Tom Hanks. Known for both his dramatic and comedic roles (Big, A League of Their Own, Sleepless in Seattle, and You’ve Got Mail), he is one of the…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 9, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/the-bill-that-brings-green-hydrogen-into-californias-clean-energy-grid/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_647886398_L-1024x683.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/the-bill-that-brings-green-hydrogen-into-californias-clean-energy-grid/" target="_blank" rel="noopener">The bill that brings green hydrogen into California’s clean energy grid</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM California just closed a gap that’s been undermining its clean energy numbers for years. Governor Newsom signed SB 1350 into law, qualifying…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/how-the-soccer-cleat-evolved-from-hardware-nails-to-engineered-fabric/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_842331832_L-1024x768.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/how-the-soccer-cleat-evolved-from-hardware-nails-to-engineered-fabric/" target="_blank" rel="noopener">How the soccer cleat evolved from hardware nails to engineered fabric</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Nobody watches the World Cup to think about footwear. But the shoes on the pitch at the 2026 tournament are the end result of about 500 years…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/events060720/" target="_blank" rel="noopener">Good News in History, July 20</a></h2>
+    <p>57 years ago today, men first stepped on the moon during NASA’s Apollo 11 mission; Neil Armstrong first, at 10:56pm EST, because he was closest to the door and Buzz Aldrin second.…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 20, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Los Angeles Times">
-  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-08/lapd-police-academy-classes-2028-olympics" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/4d9c865/2147483647/strip/false/crop/3083x2496+0+0/resize/1500x1214!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F56%2F21%2Ffa202daa4497913ef893897c903b%2F1536854-me-lapd-graduation-ajs-12.jpg" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-19/jackie-shadow-big-bear-eagles-adult-rescued" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/f03689a/2147483647/strip/false/crop/910x612+0+0/resize/910x612!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F74%2F45%2F717b3d8e44a4ba33c1d8c35fc00d%2Feagle3.jpg" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/california/story/2026-07-08/lapd-police-academy-classes-2028-olympics" target="_blank" rel="noopener">LAPD weighs canceling academy classes to get more cops on streets for Olympics</a></h2>
-    <p>LAPD officials have discussed a temporary pause on classes to free up hundreds of officers involved in training new recruits in time for the Olympic and Paralympic Games in 2028,…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.latimes.com/california/story/2026-07-19/jackie-shadow-big-bear-eagles-adult-rescued" target="_blank" rel="noopener">Rescued Big Bear bald eagle Jackie is 'stable,' wildlife nonprofit says</a></h2>
+    <p>Based on videos and pictures from the public and rescuers, &quot;it is apparent that the rescued eagle is likely Jackie,&quot; Friends of Big Bear Valley said in a social media post late…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/what-watching-soccer-does-to-your-body-according-to-science/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_528470192_L-1024x576.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/what-watching-soccer-does-to-your-body-according-to-science/" target="_blank" rel="noopener">What watching soccer does to your body, according to science</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Forty-eight teams. Sixty-four matches. A final played yesterday at MetLife Stadium in New Jersey. And a victory for Spain, the country taking…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/could-this-popular-gym-supplement-strengthen-cancer-immunotherapy/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_747834398_L-1024x682.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/could-this-popular-gym-supplement-strengthen-cancer-immunotherapy/" target="_blank" rel="noopener">Could this popular gym supplement strengthen cancer immunotherapy?</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Cancer immunotherapy has transformed treatment for some patients. For the 60 to 80 percent who don’t respond, the problem often isn’t the…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/england-fan-who-spent-life-savings-on-world-cup-trip-with-granddad-gets-money-gifted-back/" target="_blank" rel="noopener">England Fan Who Spent Life Savings on World Cup Trip with Granddad Gets Money Gifted Back</a></h2>
-    <p>An England fan who used his life savings to take his grandad to the World Cup has been left stunned after a company inspired by their story gifted him the entire $13,000 back.…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/pigeon-walks-up-to-firefighters-who-offer-oxygen/" target="_blank" rel="noopener">Pigeon Walks Up to Firefighters Who Offer Oxygen to ‘Clear its Lungs’</a></h2>
+    <p>Video footage of a fireman giving oxygen to a pigeon following a fire has gone viral on social media. After attending to a vehicle fire on Wednesday evening, the E29 crew of…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/canada-successfully-exploring-for-white-hydrogen-gas-a-clean-power-source-beneath-existing-mines/" target="_blank" rel="noopener">Canada Successfully Exploring for ‘White’ Hydrogen Gas, a Clean Power Source Beneath Existing Mines</a></h2>
-    <p>Reprinted with permission from World at Large Scientists in Canada have discovered that ancient underground rocks are naturally producing hydrogen gas—and lots of it, and it may…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/kansas-city-cop-wont-stop-until-he-finds-stolen-e-bike-for-cancer-patient/" target="_blank" rel="noopener">Kansas City Cop Won’t Stop Until He Finds Stolen E-Bike for Cancer Patient One Month Later</a></h2>
+    <p>On May 10, when someone stole the e-bike that this cancer survivor needed to get to her oncology appointments, Officer JP Young of the Kansas City Police Department told her he…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Good News Network">
   
   <div class="body">
     <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/this-outback-barber-visits-remote-island-to-host-hairstyling-workshop-bringing-fresh-hope-and-hairdoos/" target="_blank" rel="noopener">This ‘Outback Barber’ Brings Hair-Cutting Workshops to Remote Islands, Leaving Dignity and Doos in His Wake</a></h2>
-    <p>There’s an old saying: cut a man’s hair, and he’s fresh for a month. Teach a man to cut hair, and he’s fresh for a lifetime. Er, wait—wasn’t it something about fish? For…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.goodnewsnetwork.org/pharaohs-daughters-were-skilled-at-archery-4000-years-ago-reveals-new-research/" target="_blank" rel="noopener">Pharaoh’s Daughters Were Skilled at Archery 4,000 Years ago, Reveals New Research</a></h2>
+    <p>For decades, experts have disputed whether weapons found in ancient burial chambers of Egyptian princesses were actually their tools or placed there in a purely symbolic way. Now,…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Good News Network">
-  
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6258/Firefighters-Spend-4-5-Hours-Carrying-Exhausted-100-Pound-Dog-Down-Mountain-to-Safety" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/firefighters-carry-dog-4-hours-LG-6a5cbfb7b8f518.60440582.webp" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/11-year-old-wasnt-going-to-let-a-man-die-when-he-alone-dove-in-to-rescue-drowning-man/" target="_blank" rel="noopener">11-year-old ‘Wasn’t Going to Let a Man Die’ When He Alone Dove in to Rescue Drowning Man</a></h2>
-    <p>An 11-year old in Kentucky is credited with saving a man who fell unconscious in an apartment swimming pool last week. Seeing that nobody was doing anything about the situation,…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6258/Firefighters-Spend-4-5-Hours-Carrying-Exhausted-100-Pound-Dog-Down-Mountain-to-Safety" target="_blank" rel="noopener">Firefighters Spend 4.5 Hours Carrying Exhausted 100-Pound Dog Down Mountain to Safety</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 19, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Los Angeles Times">
+  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-18/doctor-who-helped-save-her-is-in-another-state-telemedicine-follow-up-is-prohibited" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/ac91d65/2147483647/strip/false/crop/6720x4480+0+0/resize/1500x1000!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fa3%2Fd3%2Fa71875d5455c96cbe610df8b8161%2F1432532-me-0409-lopez-house-call-geriatric-md-gem-008.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
+    <h2><a href="https://www.latimes.com/california/story/2026-07-18/doctor-who-helped-save-her-is-in-another-state-telemedicine-follow-up-is-prohibited" target="_blank" rel="noopener">Lopez: The doctor who helped save her is in another state, and telemedicine follow-up is prohibited</a></h2>
+    <p>&quot;Thousands of cases&quot; highlight barriers to interstate telemedicine care</p>
+    <div class="meta">🇺🇸&nbsp; Jul 18, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Los Angeles Times">
+  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-18/west-hollywood-faces-long-recovery-from-massive-water-main-break-it-was-like-whitewater-rapids" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/b2b85a9/2147483647/strip/false/crop/3777x2518+0+0/resize/1500x1000!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F29%2F2a%2Fad3500c0438fb0ba60a94681cb39%2F1563347-me-weho-water-main-break-repair-mjc-07.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
+    <h2><a href="https://www.latimes.com/california/story/2026-07-18/west-hollywood-faces-long-recovery-from-massive-water-main-break-it-was-like-whitewater-rapids" target="_blank" rel="noopener">West Hollywood faces long recovery from massive water main break: 'It was like whitewater rapids'</a></h2>
+    <p>When 17 million gallons of water poured out of a broken water main under Sunset Boulevard into downhill neighborhoods in West Hollywood, family businesses and residents' cars and…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 18, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6257/Hero-Uses-His-Own-Car-to-Safely-Stop-Runaway-SUV-Saving-Woman-and-Child-on-Busy-Highway" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/man-uses-car-to-help-driver-LG-6a5b6d7b1edae3.51488607.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6257/Hero-Uses-His-Own-Car-to-Safely-Stop-Runaway-SUV-Saving-Woman-and-Child-on-Busy-Highway" target="_blank" rel="noopener">Hero Uses His Own Car to Safely Stop Runaway SUV, Saving Woman and Child on Busy Highway</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 18, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/podcast-transcript-july-17th-2026-wildfire-satellites-seine-city-cooling-and-parenting-securely-attached-kids/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Podcast-Logo-3000-×-3000-px-2-13-1024x1024.png" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/podcast-transcript-july-17th-2026-wildfire-satellites-seine-city-cooling-and-parenting-securely-attached-kids/" target="_blank" rel="noopener">Podcast Transcript July 17th, 2026— Wildfire satellites, Seine city cooling, and parenting securely attached kids</a></h2>
+    <p>Episode Description: Greece just launched the world’s first satellite constellation built specifically for wildfire detection. It can spot a fire measuring only a few feet across,…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 17, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Positive News">
   
   <div class="body">
     <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/society/media/what-to-expect-in-the-new-positive-news-magazine/" target="_blank" rel="noopener">Reclaiming the game. What to expect in the new issue of Positive News magazine</a></h2>
-    <p>The post Reclaiming the game. What to expect in the new issue of Positive News magazine appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 8, 2026</div>
+    <h2><a href="https://www.positive.news/society/how-forensic-science-is-helping-tackle-poaching/" target="_blank" rel="noopener">In pictures: how forensic science is helping tackle wildlife poaching</a></h2>
+    <p>The post In pictures: how forensic science is helping tackle wildlife poaching appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 17, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Reasons to be Cheerful">
+  <a class="thumb" href="https://reasonstobecheerful.world/menstrual-blood-medical-possibilities/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/07/DSC00865-scaled.png" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/menstrual-blood-medical-possibilities/" target="_blank" rel="noopener">Tampons Are Becoming a Valuable Medical Tool</a></h2>
+    <p>S ometimes the most consequential innovations are fueled by frustration. When she was in her early thirties, Ridhi Tariyal asked her gynecologist for a fertility test. Her doctor…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 17, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6247/Spainand-039-s-and-039-Firefightingand-039-Donkeys-Have-Helped-Keep-Do-ana-National-Park-Free-of-Wildfires-for-Nearly-a-Decade" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/donkey-firefighters-good-news-LG-6a4e4f0180c0a2.82880707.webp" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6256/The-Best-Thing-About-This-Chick-Fil-A-Isnand-039-t-on-the-Menu-Itand-039-s-92-Year-Old-Mr-Gil" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/92-year-old-chic-fila-employee-LG-6a5a326b45b722.49842370.webp" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6247/Spainand-039-s-and-039-Firefightingand-039-Donkeys-Have-Helped-Keep-Do-ana-National-Park-Free-of-Wildfires-for-Nearly-a-Decade" target="_blank" rel="noopener">Spainand#039;s and#039;Firefightingand#039; Donkeys Have Helped Keep Doñana National Park Free of Wildfires for Nearly a Decade</a></h2>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6256/The-Best-Thing-About-This-Chick-Fil-A-Isnand-039-t-on-the-Menu-Itand-039-s-92-Year-Old-Mr-Gil" target="_blank" rel="noopener">The Best Thing About This Chick-Fil-A Isnand#039;t on the Menu. Itand#039;s 92-Year-Old Mr. Gil</a></h2>
     <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6246/For-34-Summers-Japanese-Surgeons-Have-Returned-to-Rural-Vietnam-to-Give-Children-Free-Life-Changing-Surgeries" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/japan-doctors-free-care-vietnam-LG-6a4e48c3e21a53.83831339.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6246/For-34-Summers-Japanese-Surgeons-Have-Returned-to-Rural-Vietnam-to-Give-Children-Free-Life-Changing-Surgeries" target="_blank" rel="noopener">For 34 Summers, Japanese Surgeons Have Returned to Rural Vietnam to Give Children Free Life Changing Surgeries</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Good News Network">
-  
-  <div class="body">
-    <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/a-streetside-painting-salvaged-for-its-frame-returned-after-honest-man-realized-its-enormous-value/" target="_blank" rel="noopener">A Streetside Painting Salvaged for its Frame Returned After Honest Man Realized its Enormous Value</a></h2>
-    <p>A man from Murcia in Spain couldn’t believe his luck when a gallery told him the painting he found propped up against a wall in Sevilla was an original by 19th century Spanish…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Good News Network">
-  
-  <div class="body">
-    <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/events060707-2/" target="_blank" rel="noopener">Good News in History, July 8</a></h2>
-    <p>250 years ago, the Liberty Bell was rung in Philadelphia to call citizens to hear the newly-signed Declaration of Independence, or at least that’s what is said to have happened.…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 8, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/digital-decluttering-tips-that-work-without-clearing-your-whole-schedule/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_39868413_L-1024x682.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/digital-decluttering-tips-that-work-without-clearing-your-whole-schedule/" target="_blank" rel="noopener">Digital decluttering tips that work without clearing your whole schedule</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM You know that thing where you sit down to find one photo from last summer, and somehow it’s thirty minutes later, and you’re in 2019? Digital…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/copper-compound-targets-alzheimers-at-the-blood-brain-barrier/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_646625748_L-1-1024x682.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/copper-compound-targets-alzheimers-at-the-blood-brain-barrier/" target="_blank" rel="noopener">Copper compound targets Alzheimer’s at the blood-brain barrier</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Most Alzheimer’s research goes after the toxic proteins directly. This study asks a different question: what if the brain’s own clearing…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Good News Network">
-  
-  <div class="body">
-    <span class="badge" style="--c:#E8A13A">Good News Network</span>
-    <h2><a href="https://www.goodnewsnetwork.org/viral-volunteer-effort-leaves-surprises-on-the-cars-of-residents-who-took-cabs-home-from-the-bar/" target="_blank" rel="noopener">Quirky Campaign Leaves Nice Surprises on Cars of Anyone Who Took Cabs Home from the Bar</a></h2>
-    <p>It’s an early-summer’s night and you left your truck at the bar because you chose not to drive drunk—well someone’s noticed. That someone is the Montana Barfairies, a volunteer…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Los Angeles Times">
-  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-07/la-county-rescue-teams-deployed-to-venezuela-leaned-on-support-team-at-home-were-all-working-together" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/6ad6e56/2147483647/strip/false/crop/7280x5464+0+0/resize/1500x1126!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F2f%2F3dbbaa064acba0a7163202aaa8b9%2F1561443-me-lacofd-families-venezuela-gem-001.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/california/story/2026-07-07/la-county-rescue-teams-deployed-to-venezuela-leaned-on-support-team-at-home-were-all-working-together" target="_blank" rel="noopener">L.A. County rescue teams deployed to Venezuela leaned on support team at home. 'We're all working together'</a></h2>
-    <p>LA county rescue teams deployed to Venezuela leaned on support team at home. The three-member team works out of a Pacoima warehouse.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Los Angeles Times">
-  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-07/prefab-housing-builders-seek-to-show-their-stuff-in-la-fire-recovery" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/cb07297/2147483647/strip/false/crop/6333x4245+0+0/resize/1500x1005!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F3d%2F33%2Fa1a401964dfeacb5f8bd66e90881%2F1553168-me-factory-modular-homes-cmh-02.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/california/story/2026-07-07/prefab-housing-builders-seek-to-show-their-stuff-in-la-fire-recovery" target="_blank" rel="noopener">Prefab housing builders seek to show their stuff in L.A. fire recovery</a></h2>
-    <p>Prefab home builders are rolling out new designs to appeal to Eaton and Palisades fire survivors. They see an opportunity to overcome doubts about factory-built housing.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6245/Neighbors-Rush-Into-Burning-Home-to-Save-87-Year-Old-Woman-With-Alzheimerand-039-s" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/neighbors-save-elderly-woman-fire-LG-6a4ce3863db642.86273261.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6245/Neighbors-Rush-Into-Burning-Home-to-Save-87-Year-Old-Woman-With-Alzheimerand-039-s" target="_blank" rel="noopener">Neighbors Rush Into Burning Home to Save 87 Year Old Woman With Alzheimerand#039;s</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 7, 2026</div>
+    <div class="meta">🇺🇸&nbsp; Jul 17, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Positive News">
   
   <div class="body">
     <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/economics/social-enterprise/refugee-candlemakers-rebuilding-lives-through-work/" target="_blank" rel="noopener">How the ancient art of candle making is creating a brighter future for refugees</a></h2>
-    <p>The post How the ancient art of candle making is creating a brighter future for refugees appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 7, 2026</div>
+    <h2><a href="https://www.positive.news/society/good-news-stories-from-week-29-of-2026/" target="_blank" rel="noopener">What went right this week: the good news that matters</a></h2>
+    <p>The post What went right this week: the good news that matters appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 16, 2026</div>
   </div>
 </article>
 <article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/exosome-therapy-heals-burn-patients-face-in-world-first/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Exosome-Burn-Procedure-Dr.-Marc-Jeschke-Kaitlin-Jeffrey-HGH-2026.04.29-Print-Size-010-1024x683.jpg" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/a-cheap-homegrown-catnip-lotion-could-replace-deet-for-millions-of-ugandans/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_624778446_L-1024x672.jpg" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/exosome-therapy-heals-burn-patients-face-in-world-first/" target="_blank" rel="noopener">Exosome therapy heals burn patient’s face in world first</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Kaitlin Jeffrey was 18 when her face and hair caught fire at a fraternity party at Western University last December. She ended up at the burn…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 6, 2026</div>
+    <h2><a href="https://www.optimistdaily.com/2026/07/a-cheap-homegrown-catnip-lotion-could-replace-deet-for-millions-of-ugandans/" target="_blank" rel="noopener">A cheap, homegrown catnip lotion could replace DEET for millions of Ugandans</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM A lotion made from catnip oil matched DEET in field trials in Uganda, according to research presented at the Society for Experimental Biology…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 16, 2026</div>
   </div>
 </article>
 <article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/5-grooming-habits-every-man-should-build-into-his-routine/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_490762384_L-1024x682.jpg" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/reducing-microplastic-exposure-the-four-habits-we-should-all-be-prioritizing/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_378324552_L-1024x682.jpg" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/5-grooming-habits-every-man-should-build-into-his-routine/" target="_blank" rel="noopener">5 grooming habits every man should build into his routine</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Men’s grooming has always occupied a strange middle ground. Too much and you’re vain. Too little and people notice. For most men, the default…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 6, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Los Angeles Times">
-  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-06/mexico-lost-in-world-cup-but-mexican-americans-won" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/efecdd1/2147483647/strip/false/crop/5283x3522+0+0/resize/1500x1000!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fb4%2Fac%2F3e5ab79d42e9b24639214c468d25%2F1561561-me-mexico-wcup-watch-party-rb-3058.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/california/story/2026-07-06/mexico-lost-in-world-cup-but-mexican-americans-won" target="_blank" rel="noopener">Arellano: Mexico lost in the World Cup — but Mexican Americans won</a></h2>
-    <p>It was yet another early exit for a team that has never made it to the World Cup semifinals — but no one wanted to dwell on defeat, because no one felt defeated.</p>
-    <div class="meta">🇺🇸&nbsp; Jul 6, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6244/11-Year-Old-Boy-Dives-Into-Action-to-Save-Drowning-Man-After-Others-Froze" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/11-year-old-saves-man-drowning-LG-6a4b970ab8df50.80282231.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6244/11-Year-Old-Boy-Dives-Into-Action-to-Save-Drowning-Man-After-Others-Froze" target="_blank" rel="noopener">11-Year-Old Boy Dives Into Action to Save Drowning Man After Others Froze</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 6, 2026</div>
+    <h2><a href="https://www.optimistdaily.com/2026/07/reducing-microplastic-exposure-the-four-habits-we-should-all-be-prioritizing/" target="_blank" rel="noopener">Reducing microplastic exposure: the four habits we should all be prioritizing</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM In 2025, researchers publishing in Nature Medicine found microplastics in human brain tissue at concentrations considerably higher than in the…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 16, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Positive News">
   
   <div class="body">
     <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/lifestyle/arts/the-national-dance-company-opening-doors-for-young-performers/" target="_blank" rel="noopener">The national dance company opening doors for young performers</a></h2>
-    <p>The post The national dance company opening doors for young performers appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 5, 2026</div>
+    <h2><a href="https://www.positive.news/environment/agriculture/sierra-leone-programme-helps-amputees-rebuild-lives-in-sierra-leone/" target="_blank" rel="noopener">How a farming programme in Sierra Leone helps amputees rebuild lives</a></h2>
+    <p>The post How a farming programme in Sierra Leone helps amputees rebuild lives appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 16, 2026</div>
   </div>
 </article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/california-canal-solar-project-reduces-evaporation-and-generates-power/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Wide-Span-Aerial-1024x767.jpg" loading="lazy" alt=""></a>
+<article class="card" data-src="Reasons to be Cheerful">
+  <a class="thumb" href="https://reasonstobecheerful.world/food-is-medicine-study/" target="_blank" rel="noopener"><img src="/wp-content/uploads/2022/09/memb-banner-mob.jpg" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/california-canal-solar-project-reduces-evaporation-and-generates-power/" target="_blank" rel="noopener">California canal solar project reduces evaporation and generates power</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Shade from solar panels installed above two California irrigation canals reduced water evaporation by up to 70 percent and cut aquatic weed…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 5, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="The Optimist Daily">
-  <a class="thumb" href="https://www.optimistdaily.com/2026/07/job-instability-is-pushing-people-to-rethink-their-lives-not-just-their-resumes/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_588803212_L-1024x682.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
-    <h2><a href="https://www.optimistdaily.com/2026/07/job-instability-is-pushing-people-to-rethink-their-lives-not-just-their-resumes/" target="_blank" rel="noopener">Job instability is pushing people to rethink their lives, not just their resumes</a></h2>
-    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM For years, the go-to response to career difficulty was optimization. If work felt stagnant, or a job wasn’t coming through, the prescription…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 5, 2026</div>
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/food-is-medicine-study/" target="_blank" rel="noopener">‘Food Really Is Medicine’</a></h2>
+    <p>This article was originally published by Stateline . About a dozen states offer “medically tailored meals” to people with conditions such as diabetes and heart disease who get…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 16, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6243/Dog-Miraculously-Rescued-Alive-After-Spending-8-Days-Trapped-Beneath-Collapsed-Home" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/dog-rescues-8-days-under-rubble-LG-6a48fa47ba8f20.13016306.webp" loading="lazy" alt=""></a>
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6255/and-039-I-Just-Thought-About-My-Own-Kidsand-039-A-Complete-Stranger-Saved-This-Little-Girland-039-s-Life" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/woman-rescues-baby-drowning-LG-6a58deecdd6673.29975642.webp" loading="lazy" alt=""></a>
   <div class="body">
     <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6243/Dog-Miraculously-Rescued-Alive-After-Spending-8-Days-Trapped-Beneath-Collapsed-Home" target="_blank" rel="noopener">Dog Miraculously Rescued Alive After Spending 8 Days Trapped Beneath Collapsed Home</a></h2>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6255/and-039-I-Just-Thought-About-My-Own-Kidsand-039-A-Complete-Stranger-Saved-This-Little-Girland-039-s-Life" target="_blank" rel="noopener">and#039;I Just Thought About My Own Kidsand#039;: A Complete Stranger Saved This Little Girland#039;s Life</a></h2>
     <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 4, 2026</div>
+    <div class="meta">🇺🇸&nbsp; Jul 16, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Los Angeles Times">
-  <a class="thumb" href="https://www.latimes.com/california/story/2026-07-03/cleanup-at-boyle-heights-warehouse-halted-lineage-alleges" target="_blank" rel="noopener"><img src="https://ca-times.brightspotcdn.com/dims4/default/1f38c8b/2147483647/strip/false/crop/1250x699+0+0/resize/1250x699!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Fd8%2F60%2Fecd0212348ec9d21768fd86c8d3a%2Fboyle-heights-fire-monday.jpg" loading="lazy" alt=""></a>
+<article class="card" data-src="The Optimist Daily">
+  <a class="thumb" href="https://www.optimistdaily.com/2026/07/africa-secures-900-million-in-new-clean-cooking-commitments/" target="_blank" rel="noopener"><img src="https://www.optimistdaily.com/wp-content/uploads/Depositphotos_63672907_L-1024x694.jpg" loading="lazy" alt=""></a>
   <div class="body">
-    <span class="badge" style="--c:#1F5C8B">Los Angeles Times</span>
-    <h2><a href="https://www.latimes.com/california/story/2026-07-03/cleanup-at-boyle-heights-warehouse-halted-lineage-alleges" target="_blank" rel="noopener">Demolition work at Boyle Heights warehouse halted by solar array owner, Lineage alleges</a></h2>
-    <p>Lineage, which operates the facility, accused Altus Power, the solar panel subcontractor whose rooftop equipment is suspected of potentially sparking the June 17 fire, of…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 3, 2026</div>
+    <span class="badge" style="--c:#5AA9E6">The Optimist Daily</span>
+    <h2><a href="https://www.optimistdaily.com/2026/07/africa-secures-900-million-in-new-clean-cooking-commitments/" target="_blank" rel="noopener">Africa secures $900 million in new clean cooking commitments</a></h2>
+    <p>BY THE OPTIMIST DAILY EDITORIAL TEAM Nearly one billion people across Africa cook over charcoal or firewood every day. $3.1 billion in commitments is what it’s going to take to…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 15, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Positive News">
+  
+  <div class="body">
+    <span class="badge" style="--c:#3FA796">Positive News</span>
+    <h2><a href="https://www.positive.news/society/the-marginalised-groups-finding-community-through-football/" target="_blank" rel="noopener">The marginalised groups finding community through football</a></h2>
+    <p>The post The marginalised groups finding community through football appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 15, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Reasons to be Cheerful">
+  <a class="thumb" href="https://reasonstobecheerful.world/what-were-reading-no-more-clothing-waste/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/07/earth-dot-org.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/what-were-reading-no-more-clothing-waste/" target="_blank" rel="noopener">What We’re Reading: In Europe, Clothing Waste Is Unfashionable — and Illegal</a></h2>
+    <p>Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 15, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6254/A-Stranger-Saw-a-Struggling-Veteran-at-the-Airport-Days-Later-He-Received-184-000" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/navy-vet-airport-worker-gofundme-LG-6a577b74abe7f7.87248817.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6254/A-Stranger-Saw-a-Struggling-Veteran-at-the-Airport-Days-Later-He-Received-184-000" target="_blank" rel="noopener">A Stranger Saw a Struggling Veteran at the Airport. Days Later, He Received $184,000</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 15, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6253/Teen-Hailed-as-a-Hero-After-Saving-Woman-With-Dementia-From-Dangerous-Arizona-Heat" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/kid-saves-woman-dementia-LG-6a562b0366fcf1.52932764.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6253/Teen-Hailed-as-a-Hero-After-Saving-Woman-With-Dementia-From-Dangerous-Arizona-Heat" target="_blank" rel="noopener">Teen Hailed as a Hero After Saving Woman With Dementia From Dangerous Arizona Heat</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 14, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Positive News">
+  
+  <div class="body">
+    <span class="badge" style="--c:#3FA796">Positive News</span>
+    <h2><a href="https://www.positive.news/society/what-positive-change-have-you-watched-unfold-over-many-years/" target="_blank" rel="noopener">What positive change have you seen unfold over many years?</a></h2>
+    <p>The post What positive change have you seen unfold over many years? appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 14, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Reasons to be Cheerful">
+  <a class="thumb" href="https://reasonstobecheerful.world/grenoble-beauty-over-billboards/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/07/5R5A8985-scaled.jpg" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
+    <h2><a href="https://reasonstobecheerful.world/grenoble-beauty-over-billboards/" target="_blank" rel="noopener">The City That Chose Beauty Over Billboards</a></h2>
+    <p>“T here used to be a massive block of concrete here, there was an advertising column, it wasn’t so beautiful,” says Gilles Namur, waving his hand along the length of Cours…</p>
+    <div class="meta">🇺🇸&nbsp; Jul 13, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6252/Anonymous-Donor-Gives-100-000-to-Save-Senior-Food-Program-After-Womanand-039-s-Plea-for-Help" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/donor-seniors-good-news-LG-6a53c44da10119.71622950.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6252/Anonymous-Donor-Gives-100-000-to-Save-Senior-Food-Program-After-Womanand-039-s-Plea-for-Help" target="_blank" rel="noopener">Anonymous Donor Gives $100,000 to Save Senior Food Program After Womanand#039;s Plea for Help</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 13, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Sunny Skyz">
+  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6251/A-Lonely-4-Year-Oldand-039-s-Daily-Wave-Brought-an-Entire-Neighborhood-Together" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/little-boy-waves-community-LG-6a5258938553d0.56345724.webp" loading="lazy" alt=""></a>
+  <div class="body">
+    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
+    <h2><a href="https://www.sunnyskyz.com/good-news/6251/A-Lonely-4-Year-Oldand-039-s-Daily-Wave-Brought-an-Entire-Neighborhood-Together" target="_blank" rel="noopener">A Lonely 4 Year Oldand#039;s Daily Wave Brought an Entire Neighborhood Together</a></h2>
+    <p></p>
+    <div class="meta">🇺🇸&nbsp; Jul 12, 2026</div>
+  </div>
+</article>
+<article class="card" data-src="Positive News">
+  
+  <div class="body">
+    <span class="badge" style="--c:#3FA796">Positive News</span>
+    <h2><a href="https://www.positive.news/society/children-are-overwhelmingly-positive-for-the-future-says-survey/" target="_blank" rel="noopener">Children are overwhelmingly positive for the future, says survey</a></h2>
+    <p>The post Children are overwhelmingly positive for the future, says survey appeared first on Positive News .</p>
+    <div class="meta">🇬🇧&nbsp; Jul 10, 2026</div>
   </div>
 </article>
 <article class="card" data-src="Reasons to be Cheerful">
@@ -669,24 +850,6 @@
     <div class="meta">🇺🇸&nbsp; Jul 3, 2026</div>
   </div>
 </article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6242/Firefighters-Save-Newborn-After-Emergency-Birth-Inside-Las-Vegas-Flood-Tunnel" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/firefighte-heroes-LG-6a47acb44b2895.28134292.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6242/Firefighters-Save-Newborn-After-Emergency-Birth-Inside-Las-Vegas-Flood-Tunnel" target="_blank" rel="noopener">Firefighters Save Newborn After Emergency Birth Inside Las Vegas Flood Tunnel</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 3, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Positive News">
-  
-  <div class="body">
-    <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/society/good-news-stories-from-week-27-of-2026/" target="_blank" rel="noopener">What went right this week: Europe breathes easier, plus more</a></h2>
-    <p>The post What went right this week: Europe breathes easier, plus more appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 2, 2026</div>
-  </div>
-</article>
 <article class="card" data-src="Reasons to be Cheerful">
   <a class="thumb" href="https://reasonstobecheerful.world/the-spark-wildlife-care/" target="_blank" rel="noopener"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f985.png" loading="lazy" alt=""></a>
   <div class="body">
@@ -694,114 +857,6 @@
     <h2><a href="https://reasonstobecheerful.world/the-spark-wildlife-care/" target="_blank" rel="noopener">The Spark: Would You Drive Six Hours to Save a Hummingbird?</a></h2>
     <p>Welcome back to The Spark, our monthly celebration of how people just like you are creating positive change, one meaningful step at a time. The Spark is generously supported by…</p>
     <div class="meta">🇺🇸&nbsp; Jul 2, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6241/German-Soccer-Fan-Moved-to-Tears-After-Discovering-the-America-He-Never-Expected" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/german-fan-in-tears-from-American-kindness-LG-6a464f8fafb877.82141022.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6241/German-Soccer-Fan-Moved-to-Tears-After-Discovering-the-America-He-Never-Expected" target="_blank" rel="noopener">German Soccer Fan Moved to Tears After Discovering the America He Never Expected</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 2, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Positive News">
-  
-  <div class="body">
-    <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/environment/can-provocative-climate-messaging-on-only-fans-cut-through-social-medias-noise/" target="_blank" rel="noopener">Can provocative climate messaging on OnlyFans cut through social media’s noise?</a></h2>
-    <p>The post Can provocative climate messaging on OnlyFans cut through social media’s noise? appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 2, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/what-were-reading-reflecting-pool-natural-solutions/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2025/09/Conversation-logo.png" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/what-were-reading-reflecting-pool-natural-solutions/" target="_blank" rel="noopener">What We’re Reading: How to Fix the Reflecting Pool Mess — Naturally</a></h2>
-    <p>Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might…</p>
-    <div class="meta">🇺🇸&nbsp; Jul 1, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6240/College-Sorority-Raises-Another-25-Million-for-St-Jude-Bringing-Total-Donations-to-125-Million" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/tri-delta-donates-St-Jude-millions-LG-6a44fd0392c0e1.00247833.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6240/College-Sorority-Raises-Another-25-Million-for-St-Jude-Bringing-Total-Donations-to-125-Million" target="_blank" rel="noopener">College Sorority Raises Another $25 Million for St. Jude, Bringing Total Donations to $125 Million</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jul 1, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Positive News">
-  
-  <div class="body">
-    <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/society/love-unplugged-the-in-person-dating-events-sparking-real-connection/" target="_blank" rel="noopener">Love unplugged: What happened when I swapped apps for dating in real life</a></h2>
-    <p>The post Love unplugged: What happened when I swapped apps for dating in real life appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jul 1, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/skill-based-job-training-uk/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/06/2025_01_31_JP_MORGAN_GLASGOW_2167-3-scaled.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/skill-based-job-training-uk/" target="_blank" rel="noopener">How People Without Degrees Are Snagging Corporate Jobs in the U.K.</a></h2>
-    <p>Bruce Devlin’s tech career is flourishing. He’s been promoted twice in the past four years, most recently to the role of senior quality engineer at 2i, a software testing company.…</p>
-    <div class="meta">🇺🇸&nbsp; Jun 30, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Sunny Skyz">
-  <a class="thumb" href="https://www.sunnyskyz.com/good-news/6239/Virginia-Rescue-Team-Pulls-Father-Son-Mother-and-Baby-to-Safety-After-Venezuela-Quake" target="_blank" rel="noopener"><img src="https://pub-1c31579dfca6402ebca842d57e4a19b2.r2.dev/uploads/father-son-rescued-venezuela-LG-6a43abac51c513.09606382.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#F2777A">Sunny Skyz</span>
-    <h2><a href="https://www.sunnyskyz.com/good-news/6239/Virginia-Rescue-Team-Pulls-Father-Son-Mother-and-Baby-to-Safety-After-Venezuela-Quake" target="_blank" rel="noopener">Virginia Rescue Team Pulls Father, Son, Mother, and Baby to Safety After Venezuela Quake</a></h2>
-    <p></p>
-    <div class="meta">🇺🇸&nbsp; Jun 30, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Positive News">
-  
-  <div class="body">
-    <span class="badge" style="--c:#3FA796">Positive News</span>
-    <h2><a href="https://www.positive.news/lifestyle/health/five-ways-to-support-a-childs-anxiety/" target="_blank" rel="noopener">Five ways to support a child’s anxiety</a></h2>
-    <p>The post Five ways to support a child’s anxiety appeared first on Positive News .</p>
-    <div class="meta">🇬🇧&nbsp; Jun 30, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/data-centers-oil-fields/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/06/GVTH-3-photo-credit-CRC-Beacon-1.webp" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/data-centers-oil-fields/" target="_blank" rel="noopener">To Solve a Major Problem With Data Centers, Put Them in Oil Fields</a></h2>
-    <p>This story was originally published by Grist . Sign up for Grist’s weekly newsletter here . Most Americans loathe data centers. Recent polling found that Democrats and Republicans…</p>
-    <div class="meta">🇺🇸&nbsp; Jun 29, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/yellow-means-creepy-the-color-coded-anti-harassment-system-used-by-restaurant-workers/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/06/Poster_11x17_bleed.jpg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/yellow-means-creepy-the-color-coded-anti-harassment-system-used-by-restaurant-workers/" target="_blank" rel="noopener">Yellow Means Creepy: The Color-Coded Anti-Harassment System Used by Restaurant Workers</a></h2>
-    <p>W hen Chef Erin Wade learned that most of her staff had experienced sexual harassment at her restaurant Homeroom in Oakland, California, she was stunned. The inciting incident…</p>
-    <div class="meta">🇺🇸&nbsp; Jun 26, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/music-therapy-brain-injury/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2026/06/Naresh-Shanbhag-with-his-beloved-pooch-Cookie.-Pic-courtesy-Naresh-Shanbhag.jpeg" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/music-therapy-brain-injury/" target="_blank" rel="noopener">Singing the Shopping List: How Music Can Rewire the Brain After Stroke</a></h2>
-    <p>In 2023, a stroke transformed Naresh Shanbhag, a 53-year-old smooth-talking sales professional in Bengaluru, into someone who was unable to speak words, let alone sentences. “I…</p>
-    <div class="meta">🇺🇸&nbsp; Jun 25, 2026</div>
-  </div>
-</article>
-<article class="card" data-src="Reasons to be Cheerful">
-  <a class="thumb" href="https://reasonstobecheerful.world/what-were-reading-data-center-backlash-utah-shark-tank/" target="_blank" rel="noopener"><img src="https://reasonstobecheerful.world/wp-content/uploads/2024/03/NEW-YORK-TIMES-LOGO.png" loading="lazy" alt=""></a>
-  <div class="body">
-    <span class="badge" style="--c:#8FBF6B">Reasons to be Cheerful</span>
-    <h2><a href="https://reasonstobecheerful.world/what-were-reading-data-center-backlash-utah-shark-tank/" target="_blank" rel="noopener">What We’re Reading: The Data Center Backlash Is Uniting Americans</a></h2>
-    <p>Welcome back to our weekly behind-the-scenes glimpse at what’s getting our team talking. Tell us what you’ve been reading at info@reasonstobecheerful.world and we just might…</p>
-    <div class="meta">🇺🇸&nbsp; Jun 24, 2026</div>
   </div>
 </article>
     </div>
