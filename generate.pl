@@ -39,16 +39,7 @@ my $SHARE     = grep { $_ eq '--share' } @ARGV;   # --share => hosted/portable b
 my $OUT       = $SHARE ? "share.html" : "index.html";
 my $CUTOFF    = time() - $MAX_AGE * 24 * 3600;
 
-# Logo: the live site links the file; the portable --share build inlines it as a
-# data URI (the Artifact sandbox can't load a separate file).
-my $LOGO_FILE = "logo.png";
-my $LOGO_SRC  = "logo.png";
-if ($SHARE && -f $LOGO_FILE) {
-    require MIME::Base64;
-    open(my $lf, "<:raw", $LOGO_FILE) or die "Cannot read $LOGO_FILE: $!";
-    local $/; my $bytes = <$lf>; close $lf;
-    $LOGO_SRC = "data:image/png;base64," . MIME::Base64::encode_base64($bytes, "");
-}
+# (The masthead is rendered as live text — no logo image needed.)
 
 # region -> flag emoji shown on each card
 my %FLAG = (
@@ -310,6 +301,9 @@ my $html = <<"HTML";
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Good News Bears \x{1F43B} — Daily Uplifting News</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap">
 <script>
   (function(){
     var t;
@@ -348,10 +342,12 @@ my $html = <<"HTML";
   .theme-toggle:hover{ transform:scale(1.08); border-color:var(--accent) }
 
   header.hero{ text-align:center; padding:44px 22px 20px }
-  .brandmark{ margin:0 0 6px }
-  .brandmark img{ width:min(640px,92vw); height:auto; display:block; margin:0 auto }
-  /* masthead art is black on transparent — flip it to white for the dark theme */
-  :root[data-theme="dark"] .brandmark img{ filter:invert(1) }
+  /* newspaper masthead, set in live text so it stays crisp and theme-aware */
+  .masthead{
+    font-family:'UnifrakturMaguntia','Old English Text MT','Engravers Old English',Georgia,serif;
+    font-weight:400; font-size:clamp(38px,8.4vw,78px); line-height:1.06;
+    letter-spacing:.01em; margin:0 0 10px; color:var(--ink);
+  }
 
   .dateline{ display:flex; align-items:center; gap:14px;
              width:min(640px,92vw); margin:0 auto }
@@ -422,10 +418,7 @@ my $html = <<"HTML";
 <body>
   <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle light or dark theme"></button>
   <header class="hero">
-    <h1 class="brandmark">
-      <span class="visually-hidden">Good News Bears</span>
-      <img src="$LOGO_SRC" alt="Good News Bears" width="900" height="208">
-    </h1>
+    <h1 class="masthead">Good News Bears</h1>
     <div class="dateline"><span class="rule"></span><time>$dateline</time><span class="rule"></span></div>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
     <p class="updated">Refreshed <b>$clock</b> &middot; $count_txt stories</p>
