@@ -22,6 +22,8 @@ concurrency:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      TZ: America/Los_Angeles   # dateline/timestamps in Pacific, not the runner's UTC
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}

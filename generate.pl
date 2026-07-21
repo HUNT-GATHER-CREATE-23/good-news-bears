@@ -260,8 +260,10 @@ for my $src (@SOURCES) {
 die "No items fetched — check your connection and try again.\n" unless @items;
 
 # ---- render ----------------------------------------------------------------
-my $updated = strftime("%A, %B %-d, %Y at %-I:%M %p", localtime);
-my $year    = strftime("%Y", localtime);
+my $updated  = strftime("%A, %B %-d, %Y at %-I:%M %p", localtime);
+my $dateline = strftime("%A, %B %-d, %Y", localtime);   # newspaper dateline under the masthead
+my $clock    = strftime("%-I:%M %p", localtime);
+my $year     = strftime("%Y", localtime);
 
 # source filter pills
 my %seen; my @order;
@@ -350,6 +352,12 @@ my $html = <<"HTML";
   .brandmark img{ width:min(640px,92vw); height:auto; display:block; margin:0 auto }
   /* masthead art is black on transparent — flip it to white for the dark theme */
   :root[data-theme="dark"] .brandmark img{ filter:invert(1) }
+
+  .dateline{ display:flex; align-items:center; gap:14px;
+             width:min(640px,92vw); margin:0 auto }
+  .dateline .rule{ flex:1; height:1px; background:var(--ink); opacity:.35 }
+  .dateline time{ font-family:Georgia,'Times New Roman',serif; font-size:13px;
+                  letter-spacing:.16em; text-transform:uppercase; white-space:nowrap; opacity:.85 }
   .visually-hidden{ position:absolute; width:1px; height:1px; padding:0; margin:-1px;
                     overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; border:0 }
   h1{ margin:0; font-size:clamp(30px,5vw,46px); letter-spacing:-.02em; font-weight:800 }
@@ -418,8 +426,9 @@ my $html = <<"HTML";
       <span class="visually-hidden">Good News Bears</span>
       <img src="$LOGO_SRC" alt="Good News Bears" width="900" height="208">
     </h1>
+    <div class="dateline"><span class="rule"></span><time>$dateline</time><span class="rule"></span></div>
     <p class="tagline">Your daily dose of uplifting news, gathered from around the world.</p>
-    <p class="updated">Freshly gathered <b>$updated</b> &middot; $count_txt stories</p>
+    <p class="updated">Refreshed <b>$clock</b> &middot; $count_txt stories</p>
   </header>
 
   <nav class="filters wrap">
